@@ -34,7 +34,7 @@
     /* Custom Cursor */
     .cursor {
       width: 8px; height: 8px;
-      background: rgba(110, 15, 15, 0.85);
+      background: rgba(220, 20, 20, 0.95);
       border-radius: 50%;
       position: fixed;
       top: 0; left: 0;
@@ -44,7 +44,7 @@
     }
     .cursor-ring {
       width: 32px; height: 32px;
-      border: 1px solid rgba(110, 15, 15, 0.4);
+      border: 1px solid rgba(220, 20, 20, 0.55);
       border-radius: 50%;
       position: fixed;
       top: 0; left: 0;
@@ -2975,6 +2975,7 @@
         ctx.beginPath();
         ctx.moveTo(p1.x, p1.y);
         ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, p2.x, p2.y);
+        ctx.strokeStyle = `rgba(220, 20, 20, ${alpha})`;
         ctx.strokeStyle = `rgba(110, 15, 15, ${alpha})`;
         ctx.lineWidth = 2;
         ctx.lineCap = 'round';
