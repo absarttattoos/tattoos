@@ -2013,10 +2013,11 @@
     .cu-before-img, .cu-after-img {
       display: block;
       width: 100%;
-      height: 320px;
-      object-fit: cover;
+      height: 520px;
+      object-fit: contain;
       object-position: center;
       pointer-events: none;
+      background: #111;
     }
 
     .cu-after-wrap {
@@ -2033,9 +2034,10 @@
       top: 0; left: 0;
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
       object-position: center;
       pointer-events: none;
+      background: #111;
       min-width: var(--full-width, 100%);
     }
 
@@ -2128,7 +2130,7 @@
 
     .cu-placeholder {
       width: 100%;
-      height: 320px;
+      height: 520px;
       background: linear-gradient(135deg, #111 0%, #1a1a1a 100%);
       display: flex;
       flex-direction: column;
@@ -2384,9 +2386,9 @@
       <!-- Card 1 -->
       <div class="cu-card">
         <div class="cu-slider-wrap" data-cu="0">
-          <img class="cu-before-img" src="coverup-before-1.jpg.png" alt="Before" onerror="this.parentElement.innerHTML='<div class=\'cu-placeholder\'><svg viewBox=\'0 0 24 24\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>Add before photo</span></div>'">
+          <img class="cu-before-img" src="coverup-after-1.jpg.jpg" alt="Before" onerror="this.parentElement.innerHTML='<div class=\'cu-placeholder\'><svg viewBox=\'0 0 24 24\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>Add before photo</span></div>'">
           <div class="cu-after-wrap">
-            <img src="coverup-after-1.jpg.jpg" alt="After" onerror="this.style.background='#1a1a1a'">
+            <img src="coverup-before-1.jpg.png" alt="After" onerror="this.style.background='#1a1a1a'">
           </div>
           <div class="cu-handle"></div>
           <div class="cu-labels">
@@ -2399,9 +2401,9 @@
       <!-- Card 2 -->
       <div class="cu-card">
         <div class="cu-slider-wrap" data-cu="1">
-          <img class="cu-before-img" src="coverup-before-2.jpg.jpg" alt="Before" onerror="this.parentElement.innerHTML='<div class=\'cu-placeholder\'><svg viewBox=\'0 0 24 24\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>Add before photo</span></div>'">
+          <img class="cu-before-img" src="coverup-after-2.jpg.jpg" alt="Before" onerror="this.parentElement.innerHTML='<div class=\'cu-placeholder\'><svg viewBox=\'0 0 24 24\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>Add before photo</span></div>'">
           <div class="cu-after-wrap">
-            <img src="coverup-after-2.jpg.jpg" alt="After" onerror="this.style.background='#1a1a1a'">
+            <img src="coverup-before-2.jpg.jpg" alt="After" onerror="this.style.background='#1a1a1a'">
           </div>
           <div class="cu-handle"></div>
           <div class="cu-labels">
@@ -2414,9 +2416,9 @@
       <!-- Card 3 -->
       <div class="cu-card">
         <div class="cu-slider-wrap" data-cu="2">
-          <img class="cu-before-img" src="coverup-before-3.jpg.jpg" alt="Before" onerror="this.parentElement.innerHTML='<div class=\'cu-placeholder\'><svg viewBox=\'0 0 24 24\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>Add before photo</span></div>'">
+          <img class="cu-before-img" src="coverup-after-3.jpg.png" alt="Before" onerror="this.parentElement.innerHTML='<div class=\'cu-placeholder\'><svg viewBox=\'0 0 24 24\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>Add before photo</span></div>'">
           <div class="cu-after-wrap">
-            <img src="coverup-after-3.jpg.png" alt="After" onerror="this.style.background='#1a1a1a'">
+            <img src="coverup-before-3.jpg.jpg" alt="After" onerror="this.style.background='#1a1a1a'">
           </div>
           <div class="cu-handle"></div>
           <div class="cu-labels">
@@ -2429,9 +2431,9 @@
       <!-- Card 4 -->
       <div class="cu-card">
         <div class="cu-slider-wrap" data-cu="3">
-          <img class="cu-before-img" src="coverup-before-4.jpg.jpg" alt="Before" onerror="this.parentElement.innerHTML='<div class=\'cu-placeholder\'><svg viewBox=\'0 0 24 24\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>Add before photo</span></div>'">
+          <img class="cu-before-img" src="coverup-after-4.jpg.jpg" alt="Before" onerror="this.parentElement.innerHTML='<div class=\'cu-placeholder\'><svg viewBox=\'0 0 24 24\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>Add before photo</span></div>'">
           <div class="cu-after-wrap">
-            <img src="coverup-after-4.jpg.jpg" alt="After" onerror="this.style.background='#1a1a1a'">
+            <img src="coverup-before-4.jpg.jpg" alt="After" onerror="this.style.background='#1a1a1a'">
           </div>
           <div class="cu-handle"></div>
           <div class="cu-labels">
