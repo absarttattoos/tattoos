@@ -54,7 +54,6 @@
       transition: transform 0.08s ease, width 0.2s, height 0.2s, opacity 0.2s;
     }
 
-    /* ── Nav ──────────────────────────────────────────────────────────────── */
     nav {
       position: fixed; top: 0; left: 0; right: 0;
       z-index: 100;
@@ -113,7 +112,6 @@
       font-weight: 400;
     }
 
-    /* Desktop flat nav */
     .nav-links {
       display: flex;
       align-items: center;
@@ -132,15 +130,11 @@
     }
     .nav-links a:hover { color: var(--gold); }
     .nav-links a.nav-active { color: var(--gold); }
-
-    /* Divider dots between nav links */
     .nav-links li:not(:last-child)::after {
       content: '·';
       color: rgba(201,168,92,0.25);
       font-size: 0.7rem;
     }
-
-    /* Book CTA in nav */
     .nav-book-cta {
       display: inline-block;
       margin-left: 1rem;
@@ -158,7 +152,6 @@
       color: var(--black) !important;
     }
 
-    /* ── Mobile bottom tab bar ───────────────────────────────────────────── */
     .mob-bar {
       display: none;
       position: fixed;
@@ -197,7 +190,6 @@
       position: relative;
       min-width: 54px;
     }
-    /* Pin Work to left wall, More to right wall */
     .mob-tab:first-child { padding-left: 20px; padding-right: 12px; }
     .mob-tab:last-child  { padding-right: 20px; padding-left: 12px; margin-left: auto; }
     .mob-tab svg {
@@ -216,14 +208,11 @@
       background: var(--gold);
       border-radius: 2px;
     }
-
-    /* Book tab — bolder icon, no fill, no colour difference */
     .mob-tab-book svg {
       width: 30px; height: 30px;
       stroke-width: 2.2;
     }
 
-    /* More drawer */
     .mob-more-drawer {
       display: none;
       position: fixed;
@@ -264,7 +253,6 @@
       section, footer { scroll-margin-bottom: 88px; }
     }
 
-    /* Hero */
     #hero {
       height: 100vh;
       display: flex;
@@ -380,7 +368,6 @@
       margin: 1rem auto 0;
     }
 
-    /* Decorative background */
     .hero-bg-text {
       position: absolute;
       right: -2rem;
@@ -401,7 +388,6 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
-    /* Section Shared */
     section { padding: 8rem 4rem; }
 
     .section-label {
@@ -440,7 +426,6 @@
       width: calc(100% - 8rem);
     }
 
-    /* Portfolio */
     #portfolio { background: var(--black); }
 
     .portfolio-intro {
@@ -454,10 +439,8 @@
       font-weight: 400;
     }
 
-    /* ── Peek Slider ── */
     .pf-slider-wrap {
       position: relative;
-      /* side padding creates the peek effect */
       padding: 0 10%;
       overflow: hidden;
       touch-action: pan-y;
@@ -513,7 +496,6 @@
       text-transform: uppercase;
     }
 
-    /* Arrow buttons */
     .pf-arrow {
       position: absolute;
       top: 50%;
@@ -534,7 +516,6 @@
     .pf-arrow-prev { left: 1.5%; }
     .pf-arrow-next { right: 1.5%; }
 
-    /* Progress bar */
     .pf-progress-wrap {
       height: 2px;
       background: rgba(201,168,92,0.1);
@@ -550,7 +531,6 @@
       border-radius: 2px;
     }
 
-    /* Dots */
     .pf-dots {
       display: flex;
       justify-content: center;
@@ -580,7 +560,6 @@
       text-align: center;
     }
 
-    /* Booking */
     #booking {
       background: #0d0d0d;
       border-top: 1px solid var(--border);
@@ -757,7 +736,6 @@
     }
     .privacy-note svg { width: 14px; height: 14px; stroke: var(--gold); fill: none; flex-shrink: 0; margin-top: 1px; }
 
-    /* Aftercare */
     #aftercare { background: var(--black); }
 
     .aftercare-grid {
@@ -849,7 +827,6 @@
     }
     .timeline-item:first-child p { padding-left: 1rem; }
 
-    /* About */
     #about {
       background: #0d0d0d;
       border-top: 1px solid var(--border);
@@ -934,7 +911,6 @@
       font-weight: 400;
     }
 
-    /* Location */
     #location { background: var(--black); }
 
     .location-layout {
@@ -1053,7 +1029,6 @@
     }
     .map-cta:hover { border-color: var(--gold); }
 
-    /* Footer */
     footer {
       background: #080808;
       border-top: 1px solid var(--border);
@@ -1095,7 +1070,6 @@
       letter-spacing: 0.1em;
     }
 
-    /* Mobile */
     @media (max-width: 768px) {
       nav { padding: 1.5rem 1.5rem; }
       .nav-links { display: none; }
@@ -1179,7 +1153,6 @@
       letter-spacing: 0.05em;
     }
 
-    /* ── Mood Board ─────────────────────────────────────────────────────── */
     #moodboard { background: var(--black); }
 
     .mb-layout {
@@ -1290,7 +1263,6 @@
     }
     .mb-generate-btn:disabled::before { transform: translateX(-100%); }
 
-    /* Result panel */
     .mb-result {
       opacity: 0;
       transform: translateY(16px);
@@ -1439,7 +1411,6 @@
       .mb-layout { grid-template-columns: 1fr; gap: 3rem; }
     }
 
-    /* ── Style Quiz ──────────────────────────────────────────────────────── */
     #stylequiz { background: #0d0d0d; border-top: 1px solid var(--border); }
 
     .sq-wrap { max-width: 860px; }
@@ -1466,7 +1437,6 @@
       margin-bottom: 2.5rem;
     }
 
-    /* Question */
     .sq-question {
       display: none;
       flex-direction: column;
@@ -1540,7 +1510,6 @@
       line-height: 1.5;
     }
 
-    /* Result */
     .sq-result {
       display: none;
       opacity: 0;
@@ -1634,7 +1603,6 @@
       .sq-result-inner { padding: 2rem 1.5rem; }
     }
 
-    /* ── Testimonials ────────────────────────────────────────────────────── */
     #testimonials { background: #0d0d0d; }
 
     .testi-intro { max-width: 480px; margin-bottom: 3.5rem; }
@@ -1717,7 +1685,6 @@
       margin-top: 0.15rem;
     }
 
-    /* Nav arrows */
     .testi-nav {
       display: flex;
       align-items: center;
@@ -1765,7 +1732,6 @@
       .testi-card { flex: 0 0 calc(100% - 0rem); }
     }
 
-    /* Scroll reveal */
     .reveal {
       opacity: 0;
       transform: translateY(30px);
@@ -1776,7 +1742,6 @@
       transform: translateY(0);
     }
 
-    /* ── Placement Visualiser ───────────────────────────────────────────── */
     #visualiser { background: #0d0d0d; border-top: 1px solid var(--border); }
 
     .vis-toggle {
@@ -2003,11 +1968,13 @@
     }
     .cu-card:hover { border-color: rgba(201,168,92,0.45); }
 
+    /* ── FIXED: touch-action: none stops browser scroll competing with drag ── */
     .cu-slider-wrap {
       position: relative;
       overflow: hidden;
       user-select: none;
       cursor: ew-resize;
+      touch-action: none;
     }
 
     .cu-before-img, .cu-after-img {
@@ -2027,6 +1994,7 @@
       overflow: hidden;
       width: 50%;
       transition: none;
+      will-change: width;
     }
 
     .cu-after-wrap img {
@@ -2041,16 +2009,18 @@
       min-width: var(--full-width, 100%);
     }
 
+    /* ── FIXED: handle uses transform (GPU) instead of left (layout) ── */
     .cu-handle {
       position: absolute;
       top: 0;
-      left: 50%;
-      transform: translateX(-50%);
+      left: 0;
+      transform: translateX(50%) translateX(-50%);
       width: 2px;
       height: 100%;
       background: var(--gold);
       z-index: 10;
       pointer-events: none;
+      will-change: transform;
     }
     .cu-handle::before {
       content: '';
@@ -2162,14 +2132,10 @@
 </head>
 <body>
 
-  <!-- Ink Trail Canvas -->
   <canvas id="inkCanvas" style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:9997;"></canvas>
-
-  <!-- Cursor -->
   <div class="cursor" id="cursor"></div>
   <div class="cursor-ring" id="cursorRing"></div>
 
-  <!-- Nav -->
   <nav id="mainNav">
     <a href="#hero" class="logo">
       <div class="logo-inner">
@@ -2182,10 +2148,10 @@
     </a>
     <ul class="nav-links" id="desktopNav">
       <li><a href="#portfolio">Work</a></li>
+      <li><a href="#aftercare">Aftercare</a></li>
       <li><a href="#visualiser">Placement</a></li>
       <li><a href="#moodboard">Direction</a></li>
       <li><a href="#stylequiz">Quiz</a></li>
-      <li><a href="#aftercare">Aftercare</a></li>
       <li><a href="#coverup">Cover-ups</a></li>
       <li><a href="#testimonials">Reviews</a></li>
       <li><a href="#about">About</a></li>
@@ -2194,11 +2160,8 @@
     </ul>
   </nav>
 
-  <!-- Mobile bottom tab bar -->
   <div class="mob-bar" id="mobBar">
     <div class="mob-bar-inner">
-
-      <!-- Work — leftmost -->
       <a href="#portfolio" class="mob-tab" data-section="portfolio">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
           <rect x="3" y="3" width="7" height="7" rx="0.5"/><rect x="14" y="3" width="7" height="7" rx="0.5"/>
@@ -2206,8 +2169,6 @@
         </svg>
         Work
       </a>
-
-      <!-- Explore — eye icon -->
       <a href="#visualiser" class="mob-tab" data-section="visualiser">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
           <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
@@ -2215,16 +2176,12 @@
         </svg>
         Explore
       </a>
-
-      <!-- Book — bold, gold, centre -->
       <a href="#booking" class="mob-tab mob-tab-book" data-section="booking">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
           <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
         </svg>
         Book
       </a>
-
-      <!-- Visit — map pin -->
       <a href="#location" class="mob-tab" data-section="location">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
           <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/>
@@ -2232,8 +2189,6 @@
         </svg>
         Visit
       </a>
-
-      <!-- More — rightmost -->
       <button class="mob-tab" id="mobMoreBtn" onclick="toggleMobMore()">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
           <circle cx="5" cy="12" r="1.5" fill="currentColor" stroke="none"/>
@@ -2242,11 +2197,9 @@
         </svg>
         More
       </button>
-
     </div>
   </div>
 
-  <!-- Mobile more drawer -->
   <div class="mob-more-drawer" id="mobMoreDrawer">
     <a href="#moodboard" class="mob-more-link" onclick="closeMobMore()">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -2284,7 +2237,6 @@
     </a>
   </div>
 
-  <!-- Hero -->
   <section id="hero">
     <div class="hero-bg-text">ABS</div>
     <div class="hero-line"></div>
@@ -2300,7 +2252,6 @@
 
   <div class="divider"></div>
 
-  <!-- Portfolio -->
   <section id="portfolio">
     <div class="portfolio-intro reveal">
       <p class="section-label">Portfolio</p>
@@ -2308,68 +2259,48 @@
       <p>Each tattoo is a collaboration — a piece built from your vision and refined through artistry. Browse a selection of completed works below.</p>
     </div>
 
-    <!-- Peek slider -->
     <div class="pf-slider-wrap" id="pfWrap">
-
-      <!-- Left arrow -->
       <button class="pf-arrow pf-arrow-prev" id="pfPrev" onclick="pfMove(-1)" disabled>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
       </button>
-
-      <!-- Track -->
       <div class="pf-track" id="pfTrack">
-        <!-- Slide 1 -->
         <div class="pf-slide active">
           <img src="image1.png" style="width:100%;height:100%;object-fit:contain;display:block;">
         </div>
-        <!-- Slide 2 -->
         <div class="pf-slide">
           <img src="image3.png" style="width:100%;height:100%;object-fit:contain;display:block;">
         </div>
-        <!-- Slide 3 -->
         <div class="pf-slide">
           <img src="image2.png" style="width:100%;height:100%;object-fit:contain;display:block;">
         </div>
-        <!-- Slide 4 -->
         <div class="pf-slide">
           <img src="image.png" style="width:100%;height:100%;object-fit:contain;display:block;">
         </div>
-        <!-- Slide 5 -->
         <div class="pf-slide">
           <img src="image4.png" style="width:100%;height:100%;object-fit:contain;display:block;">
         </div>
-        <!-- Slide 6 -->
         <div class="pf-slide">
           <img src="image6.png" style="width:100%;height:100%;object-fit:contain;display:block;">
         </div>
-        <!-- Slide 7 -->
         <div class="pf-slide">
           <img src="image7.png" style="width:100%;height:100%;object-fit:contain;display:block;">
         </div>
-        <!-- Slide 8 -->
         <div class="pf-slide">
           <img src="image8.png" style="width:100%;height:100%;object-fit:contain;display:block;">
         </div>
       </div>
-
-      <!-- Right arrow -->
       <button class="pf-arrow pf-arrow-next" id="pfNext" onclick="pfMove(1)">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
       </button>
     </div>
 
-    <!-- Progress bar (auto-advance timer) -->
     <div class="pf-progress-wrap"><div class="pf-progress-bar" id="pfProgress"></div></div>
-
-    <!-- Dots -->
     <div class="pf-dots" id="pfDots"></div>
-
     <p class="portfolio-note reveal">Tattoos by Abhishek Bhawnani</p>
   </section>
 
   <div class="divider"></div>
 
-  <!-- Cover-ups -->
   <section id="coverup">
     <div class="cu-intro reveal">
       <p class="section-label">Cover-ups</p>
@@ -2378,8 +2309,6 @@
     </div>
 
     <div class="cu-grid reveal">
-
-      <!-- Card 1 -->
       <div class="cu-card">
         <div class="cu-slider-wrap" data-cu="0">
           <img class="cu-before-img" src="coverup-after-1.jpg.jpg" alt="Before" onerror="this.parentElement.innerHTML='<div class=\'cu-placeholder\'><svg viewBox=\'0 0 24 24\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>Add before photo</span></div>'">
@@ -2394,7 +2323,6 @@
         </div>
       </div>
 
-      <!-- Card 2 -->
       <div class="cu-card">
         <div class="cu-slider-wrap" data-cu="1">
           <img class="cu-before-img" src="coverup-after-2.jpg.jpg" alt="Before" onerror="this.parentElement.innerHTML='<div class=\'cu-placeholder\'><svg viewBox=\'0 0 24 24\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>Add before photo</span></div>'">
@@ -2409,7 +2337,6 @@
         </div>
       </div>
 
-      <!-- Card 3 -->
       <div class="cu-card">
         <div class="cu-slider-wrap" data-cu="2">
           <img class="cu-before-img" src="coverup-after-3.jpg.png" alt="Before" onerror="this.parentElement.innerHTML='<div class=\'cu-placeholder\'><svg viewBox=\'0 0 24 24\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>Add before photo</span></div>'">
@@ -2424,7 +2351,6 @@
         </div>
       </div>
 
-      <!-- Card 4 -->
       <div class="cu-card">
         <div class="cu-slider-wrap" data-cu="3">
           <img class="cu-before-img" src="coverup-after-4.jpg.jpg" alt="Before" onerror="this.parentElement.innerHTML='<div class=\'cu-placeholder\'><svg viewBox=\'0 0 24 24\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>Add before photo</span></div>'">
@@ -2438,7 +2364,6 @@
           </div>
         </div>
       </div>
-
     </div>
 
     <p class="cu-note reveal">← Drag the slider on each card to reveal the transformation.</p>
@@ -2446,26 +2371,19 @@
 
   <div class="divider"></div>
 
-  <!-- Placement Visualiser -->
   <section id="visualiser">
     <div class="reveal">
       <p class="section-label">Placement</p>
       <h2>Where will it <em>live?</em></h2>
     </div>
     <div class="vis-layout reveal">
-
-      <!-- Body figure with front/back toggle -->
       <div>
-        <!-- Toggle -->
         <div class="vis-toggle">
           <button class="vis-toggle-btn active" id="btnFront" onclick="switchView('front')">Front</button>
           <button class="vis-toggle-btn" id="btnBack" onclick="switchView('back')">Back</button>
         </div>
-
         <div class="vis-body-wrap" id="visBodyWrap">
           <div class="vis-dot" id="visDot"></div>
-
-          <!-- FRONT VIEW -->
           <svg id="svgFront" class="vis-body-svg" viewBox="0 0 200 520" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g stroke="#6b5f52" stroke-width="1.8" fill="none">
               <ellipse cx="100" cy="36" rx="22" ry="26"/>
@@ -2506,8 +2424,6 @@
             <path class="vis-zone" data-zone="ankle" d="M54 432 L78 428 L74 480 L50 476 Z"/>
             <path class="vis-zone" data-zone="ankle" d="M146 432 L122 428 L126 480 L150 476 Z"/>
           </svg>
-
-          <!-- BACK VIEW -->
           <svg id="svgBack" class="vis-body-svg" viewBox="0 0 200 520" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:none;">
             <g stroke="#6b5f52" stroke-width="1.8" fill="none">
               <ellipse cx="100" cy="36" rx="22" ry="26"/>
@@ -2550,8 +2466,6 @@
           </svg>
         </div>
       </div>
-
-      <!-- Info panel -->
       <div class="vis-panel" id="visPanel">
         <div class="vis-prompt" id="visPrompt">
           <div class="vis-prompt-icon">
@@ -2560,7 +2474,6 @@
           <h3>Tap a zone<br>on the body</h3>
           <p>Toggle front / back, then hover or tap any area to explore placement ideas, pain level, and which styles work best there.</p>
         </div>
-
         <div class="vis-info" id="visInfo">
           <div>
             <div class="vis-zone-tag" id="visTag"></div>
@@ -2582,29 +2495,20 @@
           </button>
         </div>
       </div>
-
     </div>
   </section>
 
   <div class="divider"></div>
 
-  <!-- Mood Board -->
   <section id="moodboard">
     <div class="reveal">
       <p class="section-label">Mood Board</p>
       <h2>Find your tattoo <em>direction</em></h2>
     </div>
     <div class="mb-layout">
-
-      <!-- Left: Selectors -->
       <div class="reveal">
-
-        <!-- Step 1: Style -->
         <div class="mb-step">
-          <div class="mb-step-label">
-            <span class="mb-step-num">1</span>
-            Pick your style
-          </div>
+          <div class="mb-step-label"><span class="mb-step-num">1</span>Pick your style</div>
           <div class="mb-chips" data-group="style">
             <button class="mb-chip" data-value="Fine Line"><span>Fine Line</span></button>
             <button class="mb-chip" data-value="Blackwork"><span>Blackwork</span></button>
@@ -2616,13 +2520,8 @@
             <button class="mb-chip" data-value="Abstract"><span>Abstract</span></button>
           </div>
         </div>
-
-        <!-- Step 2: Vibe -->
         <div class="mb-step">
-          <div class="mb-step-label">
-            <span class="mb-step-num">2</span>
-            Choose a vibe
-          </div>
+          <div class="mb-step-label"><span class="mb-step-num">2</span>Choose a vibe</div>
           <div class="mb-chips" data-group="vibe">
             <button class="mb-chip" data-value="Dark & Moody"><span>Dark &amp; Moody</span></button>
             <button class="mb-chip" data-value="Soft & Ethereal"><span>Soft &amp; Ethereal</span></button>
@@ -2634,13 +2533,8 @@
             <button class="mb-chip" data-value="Elegant & Refined"><span>Elegant &amp; Refined</span></button>
           </div>
         </div>
-
-        <!-- Step 3: Size -->
         <div class="mb-step">
-          <div class="mb-step-label">
-            <span class="mb-step-num">3</span>
-            How big?
-          </div>
+          <div class="mb-step-label"><span class="mb-step-num">3</span>How big?</div>
           <div class="mb-chips" data-group="size">
             <button class="mb-chip" data-value="Tiny & Delicate (coin-sized)"><span>Tiny &amp; Delicate</span></button>
             <button class="mb-chip" data-value="Medium (palm-sized)"><span>Medium</span></button>
@@ -2648,25 +2542,19 @@
             <button class="mb-chip" data-value="Full Sleeve or Back Piece"><span>Sleeve / Back Piece</span></button>
           </div>
         </div>
-
         <button class="mb-generate-btn" id="mbGenerateBtn" disabled>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
             <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/>
           </svg>
           <span>Generate my direction</span>
         </button>
-
       </div>
-
-      <!-- Right: Result -->
       <div class="mb-result" id="mbResult">
         <div class="mb-result-card">
-          <!-- Loading state -->
           <div class="mb-result-loading" id="mbLoading" style="display:none;">
             <div class="mb-spinner"></div>
             <span class="mb-loading-text">Crafting your direction...</span>
           </div>
-          <!-- Content state -->
           <div class="mb-result-content" id="mbContent">
             <div class="mb-selection-summary" id="mbSelSummary"></div>
             <div class="mb-direction-label">Your Tattoo Direction</div>
@@ -2680,14 +2568,11 @@
           </div>
         </div>
       </div>
-
     </div>
   </section>
 
-
   <div class="divider"></div>
 
-  <!-- Style Quiz -->
   <section id="stylequiz">
     <div class="reveal">
       <p class="section-label">Style Quiz</p>
@@ -2716,7 +2601,6 @@
 
   <div class="divider"></div>
 
-  <!-- Booking -->
   <section id="booking">
     <div class="booking-layout">
       <div class="booking-info reveal">
@@ -2748,7 +2632,6 @@
           </div>
         </div>
       </div>
-
       <div class="booking-action reveal">
         <a href="https://wa.me/919373847246?text=Hi%2C%20I%27d%20like%20to%20book%20a%20tattoo%20session%20at%20AbsArt%20Tattoos." class="whatsapp-btn" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor">
@@ -2759,8 +2642,6 @@
             <span>Tap to open a conversation</span>
           </div>
         </a>
-
-        <!-- QR Code + Phone Number -->
         <div class="booking-contact-row">
           <div class="qr-block">
             <div class="qr-frame">
@@ -2775,7 +2656,6 @@
             <span class="phone-hint">Available Mon–Fri, 4pm – 11pm</span>
           </div>
         </div>
-
         <p class="privacy-note">
           <svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           Your privacy matters. No data is stored on this site. All communication happens directly through WhatsApp between us.
@@ -2786,7 +2666,6 @@
 
   <div class="divider"></div>
 
-  <!-- Aftercare -->
   <section id="aftercare">
     <div class="reveal">
       <p class="section-label">Aftercare</p>
@@ -2794,49 +2673,36 @@
     </div>
     <div class="aftercare-grid reveal">
       <div class="care-card">
-        <div class="care-icon">
-          <svg viewBox="0 0 24 24" stroke-width="1.2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 12s1 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
-        </div>
+        <div class="care-icon"><svg viewBox="0 0 24 24" stroke-width="1.2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 12s1 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg></div>
         <h3>Keep it clean</h3>
         <p>Gently wash your tattoo 2–3 times a day with lukewarm water and a fragrance-free, antibacterial soap. Pat dry with a clean paper towel — never rub.</p>
       </div>
       <div class="care-card">
-        <div class="care-icon">
-          <svg viewBox="0 0 24 24" stroke-width="1.2"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/><path d="M12 6v6l4 2"/></svg>
-        </div>
+        <div class="care-icon"><svg viewBox="0 0 24 24" stroke-width="1.2"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/><path d="M12 6v6l4 2"/></svg></div>
         <h3>Let it breathe</h3>
         <p>Remove the initial wrap after 2–4 hours. If a second-skin bandage was applied, leave it on for 3–5 days. Avoid re-wrapping unless advised.</p>
       </div>
       <div class="care-card">
-        <div class="care-icon">
-          <svg viewBox="0 0 24 24" stroke-width="1.2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
-        </div>
+        <div class="care-icon"><svg viewBox="0 0 24 24" stroke-width="1.2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
         <h3>Moisturise daily</h3>
         <p>Apply a thin layer of unscented moisturiser (Cetaphil or a fragrance-free lotion) 2–3 times a day. Don't over-apply — a little goes a long way.</p>
       </div>
       <div class="care-card">
-        <div class="care-icon">
-          <svg viewBox="0 0 24 24" stroke-width="1.2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-        </div>
+        <div class="care-icon"><svg viewBox="0 0 24 24" stroke-width="1.2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></div>
         <h3>Avoid the sun</h3>
         <p>Keep your new tattoo out of direct sunlight for at least 4 weeks. Once healed, always apply SPF 50+ to protect the colour and detail long-term.</p>
       </div>
       <div class="care-card">
-        <div class="care-icon">
-          <svg viewBox="0 0 24 24" stroke-width="1.2"><path d="M2 12h20M12 2c0 0-7 5-7 10s7 10 7 10 7-5 7-10S12 2 12 2z"/></svg>
-        </div>
+        <div class="care-icon"><svg viewBox="0 0 24 24" stroke-width="1.2"><path d="M2 12h20M12 2c0 0-7 5-7 10s7 10 7 10 7-5 7-10S12 2 12 2z"/></svg></div>
         <h3>No swimming</h3>
         <p>Avoid pools, the sea, and hot tubs for at least 3–4 weeks. Prolonged water exposure can draw out ink and cause infection before the skin has fully healed.</p>
       </div>
       <div class="care-card">
-        <div class="care-icon">
-          <svg viewBox="0 0 24 24" stroke-width="1.2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-        </div>
+        <div class="care-icon"><svg viewBox="0 0 24 24" stroke-width="1.2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
         <h3>Don't pick or scratch</h3>
         <p>Peeling and itching are normal. Picking or scratching can pull out ink and cause scarring. If it itches badly, gently tap — never scratch.</p>
       </div>
     </div>
-
     <div class="aftercare-timeline reveal">
       <p class="timeline-heading">Healing timeline</p>
       <div class="timeline-items">
@@ -2862,7 +2728,6 @@
 
   <div class="divider"></div>
 
-  <!-- About -->
   <section id="about">
     <div class="about-layout">
       <div class="about-image reveal">
@@ -2876,21 +2741,10 @@
         <p>My work is rooted in the belief that a tattoo should be as unique as the person wearing it. I specialise in custom designs, working closely with each client to bring their vision to life in a way that feels truly personal.</p>
         <p>I take limited bookings each month. Not because of demand — but because every piece deserves my full attention and energy.</p>
         <div class="about-stats">
-          <div>
-            <div class="stat-num">6+</div>
-            <div class="stat-label">Years of craft</div>
-          </div>
-          <div>
-            <div class="stat-num">500+</div>
-            <div class="stat-label">Tattoos done</div>
-          </div>
-          <div>
-            <div class="stat-num">100%</div>
-            <div class="stat-label">Custom work</div>
-          </div>
+          <div><div class="stat-num">6+</div><div class="stat-label">Years of craft</div></div>
+          <div><div class="stat-num">500+</div><div class="stat-label">Tattoos done</div></div>
+          <div><div class="stat-num">100%</div><div class="stat-label">Custom work</div></div>
         </div>
-
-        <!-- Instagram -->
         <div class="about-social">
           <div class="insta-qr-block">
             <div class="insta-qr-frame">
@@ -2918,92 +2772,46 @@
 
   <div class="divider"></div>
 
-  <!-- Testimonials -->
   <section id="testimonials">
     <div class="testi-intro reveal">
       <p class="section-label">Testimonials</p>
       <h2>What clients <em>say</em></h2>
       <p>Every review is a relationship. Here's what people said after their experience at AbsArt.</p>
     </div>
-
     <div class="testi-track-wrap reveal">
       <div class="testi-track" id="testiTrack">
-
         <div class="testi-card">
           <div class="testi-stars">★★★★★</div>
           <p class="testi-text">"I came in with a rough idea and left with something I couldn't have imagined on my own. The design process was collaborative, thoughtful, and genuinely exciting. Best tattoo experience I've had."</p>
-          <div class="testi-author">
-            <div class="testi-avatar">R</div>
-            <div>
-              <div class="testi-name">Riya M.</div>
-              <div class="testi-detail">Fine line floral · Upper arm</div>
-            </div>
-          </div>
+          <div class="testi-author"><div class="testi-avatar">R</div><div><div class="testi-name">Riya M.</div><div class="testi-detail">Fine line floral · Upper arm</div></div></div>
         </div>
-
         <div class="testi-card">
           <div class="testi-stars">★★★★★</div>
           <p class="testi-text">"The attention to detail is unreal. Three months later and the lines are still crisp. If you want someone who treats every piece like it's going in a museum, this is the studio."</p>
-          <div class="testi-author">
-            <div class="testi-avatar">K</div>
-            <div>
-              <div class="testi-name">Karan S.</div>
-              <div class="testi-detail">Geometric blackwork · Chest</div>
-            </div>
-          </div>
+          <div class="testi-author"><div class="testi-avatar">K</div><div><div class="testi-name">Karan S.</div><div class="testi-detail">Geometric blackwork · Chest</div></div></div>
         </div>
-
         <div class="testi-card">
           <div class="testi-stars">★★★★★</div>
           <p class="testi-text">"I was nervous — it was my first tattoo. The whole process was explained clearly, the studio felt calm and clean, and the result made me cry (in the best way). Already planning my second."</p>
-          <div class="testi-author">
-            <div class="testi-avatar">A</div>
-            <div>
-              <div class="testi-name">Aanya P.</div>
-              <div class="testi-detail">Minimalist script · Wrist</div>
-            </div>
-          </div>
+          <div class="testi-author"><div class="testi-avatar">A</div><div><div class="testi-name">Aanya P.</div><div class="testi-detail">Minimalist script · Wrist</div></div></div>
         </div>
-
         <div class="testi-card">
           <div class="testi-stars">★★★★★</div>
           <p class="testi-text">"Booked over WhatsApp — it was smooth and personal, not like filling in some online form. The consultation felt like talking to a friend who happened to be an incredible artist."</p>
-          <div class="testi-author">
-            <div class="testi-avatar">D</div>
-            <div>
-              <div class="testi-name">Dev R.</div>
-              <div class="testi-detail">Neo-traditional · Forearm</div>
-            </div>
-          </div>
+          <div class="testi-author"><div class="testi-avatar">D</div><div><div class="testi-name">Dev R.</div><div class="testi-detail">Neo-traditional · Forearm</div></div></div>
         </div>
-
         <div class="testi-card">
           <div class="testi-stars">★★★★★</div>
           <p class="testi-text">"Came for a cover-up I was embarrassed about. Left with something I'm genuinely proud to show off. The skill involved in making the old piece completely disappear is insane."</p>
-          <div class="testi-author">
-            <div class="testi-avatar">N</div>
-            <div>
-              <div class="testi-name">Neha T.</div>
-              <div class="testi-detail">Cover-up · Shoulder</div>
-            </div>
-          </div>
+          <div class="testi-author"><div class="testi-avatar">N</div><div><div class="testi-name">Neha T.</div><div class="testi-detail">Cover-up · Shoulder</div></div></div>
         </div>
-
         <div class="testi-card">
           <div class="testi-stars">★★★★★</div>
           <p class="testi-text">"I've been to five tattoo studios across the country. This is the only one where I felt the artist was as invested in the outcome as I was. The aftercare advice alone was worth it."</p>
-          <div class="testi-author">
-            <div class="testi-avatar">S</div>
-            <div>
-              <div class="testi-name">Sahil V.</div>
-              <div class="testi-detail">Full back piece · Multiple sessions</div>
-            </div>
-          </div>
+          <div class="testi-author"><div class="testi-avatar">S</div><div><div class="testi-name">Sahil V.</div><div class="testi-detail">Full back piece · Multiple sessions</div></div></div>
         </div>
-
       </div>
     </div>
-
     <div class="testi-nav">
       <button class="testi-btn" id="testiBtnPrev" onclick="testiMove(-1)" disabled>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
@@ -3017,7 +2825,6 @@
 
   <div class="divider"></div>
 
-  <!-- Location -->
   <section id="location">
     <div class="reveal">
       <p class="section-label">Visit</p>
@@ -3047,7 +2854,6 @@
         </div>
         <a href="https://maps.app.goo.gl/srHDRR8efoKj4pUh6" target="_blank" rel="noopener" class="btn-ghost" style="display:inline-block; margin-top:1rem;">Get Directions →</a>
       </div>
-
       <div class="map-placeholder reveal">
         <div class="map-pin"></div>
         <p class="map-address">AbsArt Tattoos<br>Singasandra, Bangalore</p>
@@ -3056,7 +2862,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer>
     <div class="footer-logo">
       <div style="display:flex;align-items:center;gap:0.65rem;">
@@ -3069,8 +2874,8 @@
     </div>
     <ul class="footer-links">
       <li><a href="#portfolio">Work</a></li>
-      <li><a href="#booking">Book</a></li>
       <li><a href="#aftercare">Aftercare</a></li>
+      <li><a href="#booking">Book</a></li>
       <li><a href="#testimonials">Testimonials</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#location">Visit</a></li>
@@ -3078,161 +2883,98 @@
     <p class="footer-copy">© 2026 AbsArt Tattoos</p>
   </footer>
 
-  <!-- QR Code library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
   <script>
-    // ── QR Code ───────────────────────────────────────────────────────────
     const WA_NUMBER = '919373847246';
     const WA_URL = `https://wa.me/${WA_NUMBER}?text=Hi%2C%20I%27d%20like%20to%20book%20a%20tattoo%20session%20at%20AbsArt%20Tattoos.`;
 
-    document.querySelectorAll('.whatsapp-btn').forEach(btn => {
-      btn.href = WA_URL;
-    });
+    document.querySelectorAll('.whatsapp-btn').forEach(btn => { btn.href = WA_URL; });
 
     window.addEventListener('DOMContentLoaded', () => {
       const qrContainer = document.createElement('div');
-      new QRCode(qrContainer, {
-        text: WA_URL,
-        width: 78,
-        height: 78,
-        colorDark: '#000000',
-        colorLight: '#ffffff',
-        correctLevel: QRCode.CorrectLevel.M
-      });
+      new QRCode(qrContainer, { text: WA_URL, width: 78, height: 78, colorDark: '#000000', colorLight: '#ffffff', correctLevel: QRCode.CorrectLevel.M });
       const qrCanvas = document.getElementById('qrCanvas');
       const waGenerated = qrContainer.querySelector('canvas');
-      if (waGenerated && qrCanvas) {
-        qrCanvas.getContext('2d').drawImage(waGenerated, 0, 0, 78, 78);
-      }
+      if (waGenerated && qrCanvas) qrCanvas.getContext('2d').drawImage(waGenerated, 0, 0, 78, 78);
 
       const INSTA_HANDLE = 'absart_tattoos';
       const INSTA_URL = `https://instagram.com/${INSTA_HANDLE}`;
-
-      document.querySelectorAll('.insta-handle-link').forEach(a => {
-        a.href = INSTA_URL;
-      });
-      document.querySelectorAll('.insta-handle-name').forEach(el => {
-        el.textContent = `@${INSTA_HANDLE}`;
-      });
+      document.querySelectorAll('.insta-handle-link').forEach(a => { a.href = INSTA_URL; });
+      document.querySelectorAll('.insta-handle-name').forEach(el => { el.textContent = `@${INSTA_HANDLE}`; });
 
       const instaContainer = document.createElement('div');
-      new QRCode(instaContainer, {
-        text: INSTA_URL,
-        width: 70,
-        height: 70,
-        colorDark: '#000000',
-        colorLight: '#ffffff',
-        correctLevel: QRCode.CorrectLevel.M
-      });
+      new QRCode(instaContainer, { text: INSTA_URL, width: 70, height: 70, colorDark: '#000000', colorLight: '#ffffff', correctLevel: QRCode.CorrectLevel.M });
       const instaCanvas = document.getElementById('instaQrCanvas');
       const instaGenerated = instaContainer.querySelector('canvas');
-      if (instaGenerated && instaCanvas) {
-        instaCanvas.getContext('2d').drawImage(instaGenerated, 0, 0, 70, 70);
-      }
+      if (instaGenerated && instaCanvas) instaCanvas.getContext('2d').drawImage(instaGenerated, 0, 0, 70, 70);
     });
   </script>
 
   <script>
-    // ── Smooth Ink Trail ─────────────────────────────────────────────────
+    // ── Ink Trail ─────────────────────────────────────────────────────────
     const canvas = document.getElementById('inkCanvas');
     const ctx = canvas.getContext('2d');
-
     function resizeCanvas() {
       const tmp = document.createElement('canvas');
       tmp.width = canvas.width; tmp.height = canvas.height;
       tmp.getContext('2d').drawImage(canvas, 0, 0);
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
+      canvas.width = window.innerWidth; canvas.height = window.innerHeight;
       ctx.drawImage(tmp, 0, 0);
     }
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    canvas.width = window.innerWidth; canvas.height = window.innerHeight;
     window.addEventListener('resize', resizeCanvas);
 
-    let targetX = window.innerWidth / 2;
-    let targetY = window.innerHeight / 2;
+    let targetX = window.innerWidth / 2, targetY = window.innerHeight / 2;
     let penX = targetX, penY = targetY;
-
     let points = [];
-    const LERP     = 0.28;
-    const MIN_DIST = 3;
-    const LIFE     = 700;
-
+    const LERP = 0.28, MIN_DIST = 3, LIFE = 700;
     const cursor = document.getElementById('cursor');
-    const ring   = document.getElementById('cursorRing');
+    const ring = document.getElementById('cursorRing');
     let ringX = 0, ringY = 0;
 
     document.addEventListener('mousemove', e => {
-      targetX = e.clientX;
-      targetY = e.clientY;
+      targetX = e.clientX; targetY = e.clientY;
       cursor.style.transform = `translate(${targetX - 4}px, ${targetY - 4}px)`;
     });
 
     function drawSmooth(pts, getAlpha) {
       if (pts.length < 2) return;
       for (let i = 0; i < pts.length - 1; i++) {
-        const p0 = pts[Math.max(i - 1, 0)];
-        const p1 = pts[i];
-        const p2 = pts[i + 1];
-        const p3 = pts[Math.min(i + 2, pts.length - 1)];
-        const tension = 0.4;
-        const cp1x = p1.x + (p2.x - p0.x) / 6 * tension * 1.5;
-        const cp1y = p1.y + (p2.y - p0.y) / 6 * tension * 1.5;
-        const cp2x = p2.x - (p3.x - p1.x) / 6 * tension * 1.5;
-        const cp2y = p2.y - (p3.y - p1.y) / 6 * tension * 1.5;
+        const p0 = pts[Math.max(i-1,0)], p1 = pts[i], p2 = pts[i+1], p3 = pts[Math.min(i+2,pts.length-1)];
+        const t = 0.4;
+        const cp1x = p1.x + (p2.x - p0.x) / 6 * t * 1.5, cp1y = p1.y + (p2.y - p0.y) / 6 * t * 1.5;
+        const cp2x = p2.x - (p3.x - p1.x) / 6 * t * 1.5, cp2y = p2.y - (p3.y - p1.y) / 6 * t * 1.5;
         const alpha = (getAlpha(p1) + getAlpha(p2)) / 2;
         if (alpha < 0.01) continue;
-        ctx.beginPath();
-        ctx.moveTo(p1.x, p1.y);
+        ctx.beginPath(); ctx.moveTo(p1.x, p1.y);
         ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, p2.x, p2.y);
         ctx.strokeStyle = `rgba(220, 20, 20, ${alpha})`;
-        ctx.lineWidth = 2.5;
-        ctx.lineCap = 'round';
-        ctx.lineJoin = 'round';
-        ctx.stroke();
+        ctx.lineWidth = 2.5; ctx.lineCap = 'round'; ctx.lineJoin = 'round'; ctx.stroke();
       }
     }
 
     function loop() {
       const now = Date.now();
-
-      penX += (targetX - penX) * LERP;
-      penY += (targetY - penY) * LERP;
-
+      penX += (targetX - penX) * LERP; penY += (targetY - penY) * LERP;
       const last = points[points.length - 1];
-      const dx = penX - (last ? last.x : penX + 999);
-      const dy = penY - (last ? last.y : penY + 999);
-      if (Math.sqrt(dx * dx + dy * dy) >= MIN_DIST) {
-        points.push({ x: penX, y: penY, birth: now });
-      }
-
+      const dx = penX - (last ? last.x : penX + 999), dy = penY - (last ? last.y : penY + 999);
+      if (Math.sqrt(dx*dx + dy*dy) >= MIN_DIST) points.push({ x: penX, y: penY, birth: now });
       points = points.filter(p => (now - p.birth) < LIFE);
-
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      drawSmooth(points, p => {
-        const t = (now - p.birth) / LIFE;
-        return Math.pow(1 - t, 1.2) * 0.95;
-      });
-
-      ringX += (targetX - ringX) * 0.22;
-      ringY += (targetY - ringY) * 0.22;
+      drawSmooth(points, p => Math.pow(1 - (now - p.birth) / LIFE, 1.2) * 0.95);
+      ringX += (targetX - ringX) * 0.22; ringY += (targetY - ringY) * 0.22;
       ring.style.transform = `translate(${ringX - 16}px, ${ringY - 16}px)`;
-
       requestAnimationFrame(loop);
     }
     loop();
 
     document.querySelectorAll('a, button').forEach(el => {
-      el.addEventListener('mouseenter', () => {
-        ring.style.width = '48px'; ring.style.height = '48px';
-      });
-      el.addEventListener('mouseleave', () => {
-        ring.style.width = '32px'; ring.style.height = '32px';
-      });
+      el.addEventListener('mouseenter', () => { ring.style.width = '48px'; ring.style.height = '48px'; });
+      el.addEventListener('mouseleave', () => { ring.style.width = '32px'; ring.style.height = '32px'; });
     });
 
-    // ── Placement Visualiser ─────────────────────────────────────────────
+    // ── Placement Visualiser ──────────────────────────────────────────────
     const ZONE_DATA = {
       head:      { title:'Head & Face',     desc:'Bold statements and deeply personal choices. Face and head tattoos are highly visible and carry strong meaning. Best suited for experienced collectors ready to commit.',                                               tags:['High Visibility','Bold Commitment','Statement Piece'],   styles:['Blackwork','Geometric','Fine Line','Script'],                       pain:4.5, dot:{x:50,y:7}  },
       neck:      { title:'Neck',             desc:'A powerful placement bridging the hidden and the seen. Neck tattoos frame the face beautifully and work best with clean, elegant designs that follow natural curves.',                                                   tags:['High Visibility','Elegant','Bold'],                              styles:['Fine Line','Script','Minimal','Ornamental'],                 pain:4,   dot:{x:50,y:13} },
@@ -3246,20 +2988,18 @@
       calf:      { title:'Calf',             desc:'Visible in shorts, hidden otherwise. Great muscle definition adds depth to detailed designs. Works especially well with flowing or vertical compositions.',                                                              tags:['Seasonal Reveal','Detailed','Vertical'],                        styles:['Traditional','Fine Line','Blackwork','Illustrative'],        pain:2.5, dot:{x:21,y:80} },
       ankle:     { title:'Ankle & Foot',     desc:'Delicate and understated. Ankle tattoos are small, charming, and personal. Note that foot tattoos may need touch-ups over time due to skin wear.',                                                                      tags:['Delicate','Small','Understated'],                               styles:['Fine Line','Minimal','Script','Botanical'],                  pain:3.5, dot:{x:21,y:92} },
       neck_back: { title:'Back of Neck',     desc:'Subtle yet striking — visible when hair is up, hidden when it\'s down. The nape is ideal for small, elegant pieces that peek out just enough to intrigue.',                                                            tags:['Subtle','Elegant','Peekaboo'],                                  styles:['Fine Line','Minimal','Script','Geometric'],                  pain:4,   dot:{x:50,y:13} },
-      upperback: { title:'Upper Back',       desc:'One of the most sought-after placements. The upper back offers a wide, flat canvas perfect for large, centred pieces or detailed symmetrical work. Shoulder blades give great natural framing.',                        tags:['Large Canvas','Symmetrical','Statement'],                       styles:['Blackwork','Neo-traditional','Geometric','Illustrative'],    pain:3,   dot:{x:50,y:25} },
-      shoulder:  { title:'Shoulder',         desc:'The shoulder wraps beautifully and connects seamlessly into arm and back pieces. Great for bold standalone work or as an anchor point for a sleeve or back piece.',                                                     tags:['Sleeve Anchor','Bold','Versatile'],                             styles:['Traditional','Blackwork','Neo-traditional','Geometric'],     pain:2.5, dot:{x:18,y:22} },
-      tricep:    { title:'Tricep & Outer Arm',desc:'The outer arm and tricep offer a long, curved canvas that works beautifully with vertical or flowing designs. Less common than the inner arm — gives a more edgy, unexpected look.',                                  tags:['Unexpected','Flowing','Edgy'],                                  styles:['Blackwork','Fine Line','Geometric','Illustrative'],          pain:2.5, dot:{x:14,y:46} },
-      lowerback: { title:'Lower Back',       desc:'Once iconic, now reclaiming its place as a considered, elegant choice. The lower back frames the spine and flows with the body naturally. Works beautifully with symmetrical or ornamental designs.',                    tags:['Symmetrical','Elegant','Ornamental'],                           styles:['Ornamental','Fine Line','Geometric','Botanical'],            pain:3,   dot:{x:50,y:42} },
-      glutes:    { title:'Glutes & Hip',     desc:'A private, personal placement — intimate and rarely seen. This area is surprisingly good for detailed work thanks to the large surface. A bold choice that stays between you and who you choose to share it with.',      tags:['Private','Intimate','Bold'],                                    styles:['Fine Line','Ornamental','Blackwork','Illustrative'],         pain:3,   dot:{x:50,y:54} },
-      hamstring: { title:'Hamstring & Back of Thigh', desc:'An underrated placement with a long, flowing canvas. The back of the thigh suits elongated designs perfectly and is easily hidden or revealed. Surprisingly low on the pain scale.',                          tags:['Underrated','Low Pain','Elongated'],                            styles:['Fine Line','Botanical','Blackwork','Illustrative'],          pain:2,   dot:{x:22,y:66} },
+      upperback: { title:'Upper Back',       desc:'One of the most sought-after placements. The upper back offers a wide, flat canvas perfect for large, centred pieces or detailed symmetrical work.',                                                                     tags:['Large Canvas','Symmetrical','Statement'],                       styles:['Blackwork','Neo-traditional','Geometric','Illustrative'],    pain:3,   dot:{x:50,y:25} },
+      shoulder:  { title:'Shoulder',         desc:'The shoulder wraps beautifully and connects seamlessly into arm and back pieces. Great for bold standalone work or as an anchor point for a sleeve.',                                                                    tags:['Sleeve Anchor','Bold','Versatile'],                             styles:['Traditional','Blackwork','Neo-traditional','Geometric'],     pain:2.5, dot:{x:18,y:22} },
+      tricep:    { title:'Tricep & Outer Arm',desc:'The outer arm and tricep offer a long, curved canvas. Less common than the inner arm — gives a more edgy, unexpected look.',                                                                                          tags:['Unexpected','Flowing','Edgy'],                                  styles:['Blackwork','Fine Line','Geometric','Illustrative'],          pain:2.5, dot:{x:14,y:46} },
+      lowerback: { title:'Lower Back',       desc:'Once iconic, now reclaiming its place as a considered, elegant choice. Works beautifully with symmetrical or ornamental designs.',                                                                                      tags:['Symmetrical','Elegant','Ornamental'],                           styles:['Ornamental','Fine Line','Geometric','Botanical'],            pain:3,   dot:{x:50,y:42} },
+      glutes:    { title:'Glutes & Hip',     desc:'A private, personal placement — intimate and rarely seen. A bold choice that stays between you and who you choose to share it with.',                                                                                   tags:['Private','Intimate','Bold'],                                    styles:['Fine Line','Ornamental','Blackwork','Illustrative'],         pain:3,   dot:{x:50,y:54} },
+      hamstring: { title:'Hamstring & Back of Thigh', desc:'An underrated placement with a long, flowing canvas. Surprisingly low on the pain scale.',                                                                                                                    tags:['Underrated','Low Pain','Elongated'],                            styles:['Fine Line','Botanical','Blackwork','Illustrative'],          pain:2,   dot:{x:22,y:66} },
     };
 
-    let currentView = 'front';
-    let activeZone = null;
+    let currentView = 'front', activeZone = null;
 
     function switchView(view) {
-      currentView = view;
-      resetVis();
+      currentView = view; resetVis();
       document.getElementById('svgFront').style.display = view === 'front' ? 'block' : 'none';
       document.getElementById('svgBack').style.display  = view === 'back'  ? 'block' : 'none';
       document.getElementById('btnFront').classList.toggle('active', view === 'front');
@@ -3273,54 +3013,37 @@
     const visWrap   = document.getElementById('visBodyWrap');
 
     function showZone(key) {
-      const d = ZONE_DATA[key];
-      if (!d) return;
+      const d = ZONE_DATA[key]; if (!d) return;
       activeZone = key;
-
       document.getElementById('visTag').textContent   = `Placement — Pain ${d.pain}/5`;
       document.getElementById('visTitle').textContent = d.title;
       document.getElementById('visDesc').textContent  = d.desc;
       document.getElementById('visTags').innerHTML    = d.tags.map(t=>`<span class="vis-tag">${t}</span>`).join('');
       document.getElementById('visStyles').innerHTML  = d.styles.map(s=>`<span class="vis-style-pill">${s}</span>`).join('');
-
-      const svgEl  = visWrap.querySelector('.vis-body-svg:not([style*="none"])') || visWrap.querySelector('.vis-body-svg');
-      const svgRect = svgEl.getBoundingClientRect();
-      const wrapRect = visWrap.getBoundingClientRect();
+      const svgEl = visWrap.querySelector('.vis-body-svg:not([style*="none"])') || visWrap.querySelector('.vis-body-svg');
+      const svgRect = svgEl.getBoundingClientRect(), wrapRect = visWrap.getBoundingClientRect();
       visDot.style.left = (svgRect.left - wrapRect.left + d.dot.x/100 * svgRect.width)  + 'px';
       visDot.style.top  = (svgRect.top  - wrapRect.top  + d.dot.y/100 * svgRect.height) + 'px';
       visDot.classList.add('show');
-
-      visPrompt.classList.add('hidden');
-      visInfo.classList.add('show');
-
+      visPrompt.classList.add('hidden'); visInfo.classList.add('show');
       document.querySelectorAll('.vis-zone').forEach(z => z.classList.remove('active'));
       document.querySelectorAll(`.vis-zone[data-zone="${key}"]`).forEach(z => z.classList.add('active'));
     }
 
     function resetVis() {
       activeZone = null;
-      visPrompt.classList.remove('hidden');
-      visInfo.classList.remove('show');
-      visDot.classList.remove('show');
+      visPrompt.classList.remove('hidden'); visInfo.classList.remove('show'); visDot.classList.remove('show');
       document.querySelectorAll('.vis-zone').forEach(z => z.classList.remove('active'));
     }
 
     function bindZones() {
       document.querySelectorAll('.vis-zone').forEach(zone => {
-        const fresh = zone.cloneNode(true);
-        zone.parentNode.replaceChild(fresh, zone);
+        const fresh = zone.cloneNode(true); zone.parentNode.replaceChild(fresh, zone);
       });
       document.querySelectorAll('.vis-zone').forEach(zone => {
         zone.addEventListener('click', () => showZone(zone.dataset.zone));
-        zone.addEventListener('mouseenter', () => {
-          if (!activeZone) {
-            document.querySelectorAll('.vis-zone').forEach(z => z.classList.remove('active'));
-            zone.classList.add('active');
-          }
-        });
-        zone.addEventListener('mouseleave', () => {
-          if (!activeZone) zone.classList.remove('active');
-        });
+        zone.addEventListener('mouseenter', () => { if (!activeZone) { document.querySelectorAll('.vis-zone').forEach(z => z.classList.remove('active')); zone.classList.add('active'); } });
+        zone.addEventListener('mouseleave', () => { if (!activeZone) zone.classList.remove('active'); });
       });
     }
 
@@ -3335,152 +3058,44 @@
     const mbContent = document.getElementById('mbContent');
 
     const DIRECTIONS = {
-      'Fine Line|Dark & Moody': {
-        title: 'Quiet Darkness, <em>Precisely Drawn</em>',
-        body: 'You\'re drawn to art that whispers rather than shouts — shadow and restraint over noise. Fine line work in a dark palette creates something hauntingly beautiful: intimate, considered, and impossible to ignore.',
-        suggestions: ['Single-needle linework of gothic botanicals or withered florals', 'A moth or raven rendered in hairline strokes with negative space', 'Subtle stippling to build depth without solid fills']
-      },
-      'Fine Line|Soft & Ethereal': {
-        title: 'Like Smoke, <em>Never Solid</em>',
-        body: 'Delicate and dreamlike — your tattoo should feel like it was always there, part of you. Fine line at its most poetic: barely-there strokes that suggest rather than declare.',
-        suggestions: ['Loose wildflowers or dried botanicals with broken, airy linework', 'A crescent moon or star cluster in single-needle detail', 'Watercolour-inspired washes with fine line outlines that fade at the edges']
-      },
-      'Fine Line|Bold & Powerful': {
-        title: 'Steel Wrapped <em>in Silk</em>',
-        body: 'Contradiction is your strength — delicate in technique, fierce in meaning. Fine line gives you precision; your subject matter gives you power. The contrast is exactly what makes it unforgettable.',
-        suggestions: ['A lioness or eagle rendered in ultra-fine linework — detail over bulk', 'Armour or weaponry reimagined as intricate line drawings', 'Bold text or a personal motto in refined, thin lettering']
-      },
-      'Fine Line|Nature & Organic': {
-        title: 'The World Drawn <em>Thin</em>',
-        body: 'Nature already has perfect lines — your tattoo should follow them. Fine line botanical work at its best captures the fragility and resilience of the natural world in a single, continuous stroke.',
-        suggestions: ['A sprig of lavender or eucalyptus with every vein visible', 'Mushrooms, ferns, or moss in scientific illustration style', 'A continuous line landscape — mountains or coastline in one unbroken stroke']
-      },
-      'Fine Line|Sacred & Spiritual': {
-        title: 'Sacred Geometry, <em>Drawn Lightly</em>',
-        body: 'Spiritual work in fine line carries a meditative quality — as though the act of drawing it was itself a ritual. Precise, intentional, and quietly profound.',
-        suggestions: ['Mandala or sacred geometry in ultra-thin repeated linework', 'A meaningful symbol — om, ankh, triquetra — stripped back to its purest form', 'Celestial mapping: constellations, birth charts, or lunar phases']
-      },
-      'Fine Line|Elegant & Refined': {
-        title: 'Nothing Extra. <em>Everything Precise.</em>',
-        body: 'Refinement is your language. Fine line work at its most considered — no excess, no noise, just the essential mark. This is tattooing as jewellery.',
-        suggestions: ['A single botanical stem with architectural precision', 'Minimalist portraiture — a face or figure in continuous line', 'Fine line calligraphy of a word or date that means everything']
-      },
-      'Blackwork|Dark & Moody': {
-        title: 'Ink as <em>Armour</em>',
-        body: 'Full, uncompromising blackwork for someone who wears darkness with intention. This is tattooing at its most primal — bold, permanent, unapologetic. It will demand attention and reward it.',
-        suggestions: ['Large-scale black fills with negative space creating the design', 'A dark forest, crumbling architecture, or occult imagery in solid black', 'Dotwork shading building from deep shadow to skin — no outlines needed']
-      },
-      'Blackwork|Bold & Powerful': {
-        title: 'Black. <em>Absolute. Permanent.</em>',
-        body: 'You want presence — something that announces itself. Blackwork gives you maximum visual impact and ages beautifully over decades. This is a tattoo people will remember.',
-        suggestions: ['Bold tribal-influenced patterns with strong geometric contrast', 'A powerful animal in full blackwork with layered texture', 'Abstract black forms that play with positive and negative space']
-      },
-      'Blackwork|Sacred & Spiritual': {
-        title: 'Ancient Marks, <em>Modern Skin</em>',
-        body: 'Blackwork has been the language of ritual and devotion for thousands of years. Your tattoo should carry that weight — something that feels like it belongs to a tradition older than you.',
-        suggestions: ['Polynesian or Maori-inspired patterns adapted to your personal story', 'Sacred symbols built into geometric blackwork compositions', 'Eye of providence, serpent, or tree of life in bold black illustration']
-      },
-      'Blackwork|Raw & Edgy': {
-        title: 'Torn From <em>the Dark</em>',
-        body: 'No softness, no apology. Raw blackwork pushes against refinement — it has texture, attitude, and an energy that polished work can\'t replicate. You want something that bites.',
-        suggestions: ['Woodcut or linocut-inspired imagery with intentional roughness', 'Glitch or distorted blackwork — like corrupted beauty', 'Heavy black fills with deliberately uneven edges and expressive marks']
-      },
-      'Geometric|Dark & Moody': {
-        title: 'Order Inside <em>the Void</em>',
-        body: 'Geometry in darkness: precise structures that feel like they were pulled from somewhere unknown. Sacred math rendered in shadow, carrying weight and mystery in equal measure.',
-        suggestions: ['Dark geometric mandalas with deep dotwork shading', 'Architectural forms — arches, prisms — in stark black geometry', 'A geometric animal portrait with dark fills and sharp contrast']
-      },
-      'Geometric|Soft & Ethereal': {
-        title: 'Shapes That <em>Dissolve</em>',
-        body: 'Not all geometry is rigid. Your vision lives in the space where structure meets softness — forms that feel mathematical yet somehow organic, like frost on glass.',
-        suggestions: ['Geometric florals where petals are built from triangles and curves', 'Fine line sacred geometry that fades at the edges', 'A geometric moon phase or crystal cluster in delicate linework']
-      },
-      'Geometric|Bold & Powerful': {
-        title: 'Built Like <em>Architecture</em>',
-        body: 'Geometry as statement — clean, architectural, and commanding. This tattoo will feel designed rather than drawn: every angle intentional, every line load-bearing.',
-        suggestions: ['A bold geometric wolf or bear — facets instead of fur', 'Interlocking geometric shapes building toward a focal symbol', 'Metatron\'s cube or other sacred geometric forms in strong black linework']
-      },
-      'Geometric|Nature & Organic': {
-        title: 'Nature\'s Hidden <em>Mathematics</em>',
-        body: 'Nature runs on geometry — fibonacci spirals, hexagonal cells, fractal branches. Your tattoo sits at that intersection: organic subjects revealed through their underlying mathematical truth.',
-        suggestions: ['A geometric forest or mountain range built from triangulated planes', 'Flora with geometric precision — petals as perfect polygons', 'A koi or hummingbird rendered in low-poly geometric style']
-      },
-      'Neo-Traditional|Dark & Moody': {
-        title: 'Old Lore, <em>New Darkness</em>',
-        body: 'Neo-traditional in a dark palette — rich, narrative, and atmospheric. This is folklore rendered in ink: heavy lines, jewel-toned shadows, and subject matter that carries centuries of meaning.',
-        suggestions: ['A raven or black cat with neo-traditional bold outlines and dark shading', 'Gothic florals — black roses, belladonna, dead botanicals', 'Memento mori imagery reimagined with neo-traditional technique and flair']
-      },
-      'Neo-Traditional|Bold & Powerful': {
-        title: 'Illustrated <em>With Intent</em>',
-        body: 'Neo-traditional at full power — colour, line weight, and composition working together to create something vivid and memorable. This is the tattoo that turns heads across the room.',
-        suggestions: ['A roaring tiger or eagle with exaggerated neo-traditional proportions', 'A bold floral chest or shoulder piece with rich depth and linework', 'A warrior or mythological figure in full neo-traditional illustration']
-      },
-      'Illustrative|Soft & Ethereal': {
-        title: 'A Story Told <em>in Brushstrokes</em>',
-        body: 'Illustrative work at its most dreamlike — soft edges, painterly shading, and subject matter that feels lifted from a hand-illustrated novel. Romantic, personal, and timeless.',
-        suggestions: ['A delicate portrait or figure emerging from botanical surroundings', 'Book illustration-style imagery — a scene, a moment, a place', 'Loose ink-wash style with fine linework details on top']
-      },
-      'Illustrative|Nature & Organic': {
-        title: 'Field Notes <em>in Ink</em>',
-        body: 'Scientific illustration meets fine art tattooing. Your work should feel documented — like a botanist\'s sketchbook brought to life on skin. Precise observation rendered with artistic soul.',
-        suggestions: ['Botanical illustration with Latin labels and fine detail', 'A nature scene — a tide pool, a forest floor, a bird in flight', 'Insects, fungi, or sea creatures in natural history illustration style']
-      },
-      'Minimalist|Soft & Ethereal': {
-        title: 'The Mark <em>That Stays</em>',
-        body: 'Less is a discipline, not a limitation. One perfect line, one considered shape — something so simple it feels inevitable. This tattoo won\'t age, won\'t date, won\'t ever feel like too much.',
-        suggestions: ['A single continuous line that forms a meaningful shape', 'One small symbol placed with absolute precision', 'Negative space work — form defined by what isn\'t there']
-      },
-      'Minimalist|Elegant & Refined': {
-        title: 'Nothing Wasted. <em>Everything Meant.</em>',
-        body: 'True minimalism is the hardest discipline in tattooing — every mark must justify its existence. Yours will. Clean, intentional, and quietly luxurious.',
-        suggestions: ['A word, date, or coordinates in clean, refined typography', 'One small motif with perfect proportion and placement', 'A barely-there design that only reveals itself up close']
-      },
-      'Ornamental|Sacred & Spiritual': {
-        title: 'Adorned With <em>Meaning</em>',
-        body: 'Ornamental work rooted in spiritual symbolism — your body as a sacred space, decorated with intention. Patterns that carry history and weight, rendered with jewel-like precision.',
-        suggestions: ['Mandala-based ornamental work framing a central sacred symbol', 'Hamsa, evil eye, or lotus built into decorative geometric patterns', 'Collar or cuff ornamental designs that wrap the body like ceremonial jewellery']
-      },
-      'Ornamental|Elegant & Refined': {
-        title: 'Wear It Like <em>Gold</em>',
-        body: 'Ornamental tattooing at its most luxurious — fine detail, perfect symmetry, and placement that makes the tattoo feel like an extension of the body rather than decoration on top of it.',
-        suggestions: ['A fine ornamental sternum piece with chandelier-like detail', 'Lace-inspired patterns for collar, wrist, or ankle', 'Jewellery-style finger or hand ornamentation in detailed linework']
-      },
-      'Abstract|Raw & Edgy': {
-        title: 'No Rules. <em>Just Marks.</em>',
-        body: 'Abstract work gives your artist the most creative freedom — and produces the most truly unique results. Expressive, gestural, and impossible to replicate exactly. This one is yours alone.',
-        suggestions: ['Gestural ink-blot or brushstroke-inspired abstract shapes', 'Abstract portraiture — a face suggested rather than drawn', 'Expressive black abstract forms with unexpected negative space']
-      },
-      'Abstract|Witty & Playful': {
-        title: 'Unexpected. <em>Entirely You.</em>',
-        body: 'Abstract with a sense of humour — work that makes people look twice, then smile. Clever, surprising, and distinctly personal. The kind of tattoo with a story you\'ll enjoy telling.',
-        suggestions: ['An abstract shape that secretly forms something recognisable', 'Pop art-inspired abstraction with bold colours and flat shapes', 'A playful distorted figure or object — surrealism on skin']
-      }
+      'Fine Line|Dark & Moody': { title: 'Quiet Darkness, <em>Precisely Drawn</em>', body: 'You\'re drawn to art that whispers rather than shouts — shadow and restraint over noise. Fine line work in a dark palette creates something hauntingly beautiful.', suggestions: ['Single-needle linework of gothic botanicals or withered florals', 'A moth or raven rendered in hairline strokes with negative space', 'Subtle stippling to build depth without solid fills'] },
+      'Fine Line|Soft & Ethereal': { title: 'Like Smoke, <em>Never Solid</em>', body: 'Delicate and dreamlike — your tattoo should feel like it was always there, part of you. Fine line at its most poetic.', suggestions: ['Loose wildflowers or dried botanicals with broken, airy linework', 'A crescent moon or star cluster in single-needle detail', 'Watercolour-inspired washes with fine line outlines that fade at the edges'] },
+      'Fine Line|Bold & Powerful': { title: 'Steel Wrapped <em>in Silk</em>', body: 'Contradiction is your strength — delicate in technique, fierce in meaning. Fine line gives you precision; your subject matter gives you power.', suggestions: ['A lioness or eagle rendered in ultra-fine linework — detail over bulk', 'Armour or weaponry reimagined as intricate line drawings', 'Bold text or a personal motto in refined, thin lettering'] },
+      'Fine Line|Nature & Organic': { title: 'The World Drawn <em>Thin</em>', body: 'Nature already has perfect lines — your tattoo should follow them. Fine line botanical work captures the fragility and resilience of the natural world.', suggestions: ['A sprig of lavender or eucalyptus with every vein visible', 'Mushrooms, ferns, or moss in scientific illustration style', 'A continuous line landscape — mountains or coastline in one unbroken stroke'] },
+      'Fine Line|Sacred & Spiritual': { title: 'Sacred Geometry, <em>Drawn Lightly</em>', body: 'Spiritual work in fine line carries a meditative quality — as though the act of drawing it was itself a ritual.', suggestions: ['Mandala or sacred geometry in ultra-thin repeated linework', 'A meaningful symbol stripped back to its purest form', 'Celestial mapping: constellations, birth charts, or lunar phases'] },
+      'Fine Line|Elegant & Refined': { title: 'Nothing Extra. <em>Everything Precise.</em>', body: 'Refinement is your language. Fine line work at its most considered — no excess, no noise, just the essential mark.', suggestions: ['A single botanical stem with architectural precision', 'Minimalist portraiture — a face or figure in continuous line', 'Fine line calligraphy of a word or date that means everything'] },
+      'Blackwork|Dark & Moody': { title: 'Ink as <em>Armour</em>', body: 'Full, uncompromising blackwork for someone who wears darkness with intention. Bold, permanent, unapologetic.', suggestions: ['Large-scale black fills with negative space creating the design', 'A dark forest, crumbling architecture, or occult imagery in solid black', 'Dotwork shading building from deep shadow to skin'] },
+      'Blackwork|Bold & Powerful': { title: 'Black. <em>Absolute. Permanent.</em>', body: 'You want presence. Blackwork gives you maximum visual impact and ages beautifully over decades.', suggestions: ['Bold tribal-influenced patterns with strong geometric contrast', 'A powerful animal in full blackwork with layered texture', 'Abstract black forms that play with positive and negative space'] },
+      'Blackwork|Sacred & Spiritual': { title: 'Ancient Marks, <em>Modern Skin</em>', body: 'Blackwork has been the language of ritual for thousands of years. Your tattoo should carry that weight.', suggestions: ['Polynesian or Maori-inspired patterns adapted to your personal story', 'Sacred symbols built into geometric blackwork compositions', 'Eye of providence, serpent, or tree of life in bold black illustration'] },
+      'Blackwork|Raw & Edgy': { title: 'Torn From <em>the Dark</em>', body: 'No softness, no apology. Raw blackwork pushes against refinement — it has texture, attitude, and an energy that polished work can\'t replicate.', suggestions: ['Woodcut or linocut-inspired imagery with intentional roughness', 'Glitch or distorted blackwork — like corrupted beauty', 'Heavy black fills with deliberately uneven edges and expressive marks'] },
+      'Geometric|Dark & Moody': { title: 'Order Inside <em>the Void</em>', body: 'Geometry in darkness: precise structures that feel like they were pulled from somewhere unknown.', suggestions: ['Dark geometric mandalas with deep dotwork shading', 'Architectural forms in stark black geometry', 'A geometric animal portrait with dark fills and sharp contrast'] },
+      'Geometric|Bold & Powerful': { title: 'Built Like <em>Architecture</em>', body: 'Geometry as statement — clean, architectural, and commanding. This tattoo will feel designed rather than drawn.', suggestions: ['A bold geometric wolf or bear — facets instead of fur', 'Interlocking geometric shapes building toward a focal symbol', 'Sacred geometric forms in strong black linework'] },
+      'Geometric|Nature & Organic': { title: 'Nature\'s Hidden <em>Mathematics</em>', body: 'Nature runs on geometry — fibonacci spirals, hexagonal cells, fractal branches. Your tattoo sits at that intersection.', suggestions: ['A geometric forest or mountain range built from triangulated planes', 'Flora with geometric precision — petals as perfect polygons', 'A koi or hummingbird rendered in low-poly geometric style'] },
+      'Neo-Traditional|Bold & Powerful': { title: 'Illustrated <em>With Intent</em>', body: 'Neo-traditional at full power — colour, line weight, and composition working together to create something vivid and memorable.', suggestions: ['A roaring tiger or eagle with exaggerated neo-traditional proportions', 'A bold floral chest or shoulder piece with rich depth and linework', 'A warrior or mythological figure in full neo-traditional illustration'] },
+      'Illustrative|Soft & Ethereal': { title: 'A Story Told <em>in Brushstrokes</em>', body: 'Illustrative work at its most dreamlike — soft edges, painterly shading, and subject matter that feels lifted from a hand-illustrated novel.', suggestions: ['A delicate portrait or figure emerging from botanical surroundings', 'Book illustration-style imagery — a scene, a moment, a place', 'Loose ink-wash style with fine linework details on top'] },
+      'Illustrative|Nature & Organic': { title: 'Field Notes <em>in Ink</em>', body: 'Scientific illustration meets fine art tattooing. Your work should feel documented — like a botanist\'s sketchbook brought to life on skin.', suggestions: ['Botanical illustration with Latin labels and fine detail', 'A nature scene — a tide pool, a forest floor, a bird in flight', 'Insects, fungi, or sea creatures in natural history illustration style'] },
+      'Minimalist|Soft & Ethereal': { title: 'The Mark <em>That Stays</em>', body: 'Less is a discipline, not a limitation. One perfect line, one considered shape — something so simple it feels inevitable.', suggestions: ['A single continuous line that forms a meaningful shape', 'One small symbol placed with absolute precision', 'Negative space work — form defined by what isn\'t there'] },
+      'Minimalist|Elegant & Refined': { title: 'Nothing Wasted. <em>Everything Meant.</em>', body: 'True minimalism is the hardest discipline in tattooing — every mark must justify its existence.', suggestions: ['A word, date, or coordinates in clean, refined typography', 'One small motif with perfect proportion and placement', 'A barely-there design that only reveals itself up close'] },
+      'Ornamental|Sacred & Spiritual': { title: 'Adorned With <em>Meaning</em>', body: 'Ornamental work rooted in spiritual symbolism — your body as a sacred space, decorated with intention.', suggestions: ['Mandala-based ornamental work framing a central sacred symbol', 'Hamsa, evil eye, or lotus built into decorative geometric patterns', 'Collar or cuff ornamental designs that wrap the body like ceremonial jewellery'] },
+      'Ornamental|Elegant & Refined': { title: 'Wear It Like <em>Gold</em>', body: 'Ornamental tattooing at its most luxurious — fine detail, perfect symmetry, and placement that makes the tattoo feel like an extension of the body.', suggestions: ['A fine ornamental sternum piece with chandelier-like detail', 'Lace-inspired patterns for collar, wrist, or ankle', 'Jewellery-style finger or hand ornamentation in detailed linework'] },
+      'Abstract|Raw & Edgy': { title: 'No Rules. <em>Just Marks.</em>', body: 'Abstract work gives your artist the most creative freedom — and produces the most truly unique results. Expressive, gestural, impossible to replicate.', suggestions: ['Gestural ink-blot or brushstroke-inspired abstract shapes', 'Abstract portraiture — a face suggested rather than drawn', 'Expressive black abstract forms with unexpected negative space'] },
+      'Abstract|Witty & Playful': { title: 'Unexpected. <em>Entirely You.</em>', body: 'Abstract with a sense of humour — work that makes people look twice, then smile. Clever, surprising, and distinctly personal.', suggestions: ['An abstract shape that secretly forms something recognisable', 'Pop art-inspired abstraction with bold colours and flat shapes', 'A playful distorted figure or object — surrealism on skin'] },
     };
 
     const SIZE_NOTES = {
-      'Tiny & Delicate (coin-sized)':    'Keep it small and precise — placement is everything at this scale. Consider the inner wrist, behind the ear, or the ankle.',
-      'Medium (palm-sized)':             'Medium scale gives room for detail without overwhelming. Upper arm, forearm, or thigh are ideal canvases.',
-      'Large Statement Piece':           'Go bold with composition — use the full canvas. Thigh, back, or chest will carry this beautifully.',
-      'Full Sleeve or Back Piece':       'Plan the flow across the whole canvas first. A great sleeve or back piece is built in sessions — start with the anchor and grow outward.'
+      'Tiny & Delicate (coin-sized)': 'Keep it small and precise — placement is everything at this scale. Consider the inner wrist, behind the ear, or the ankle.',
+      'Medium (palm-sized)': 'Medium scale gives room for detail without overwhelming. Upper arm, forearm, or thigh are ideal canvases.',
+      'Large Statement Piece': 'Go bold with composition — use the full canvas. Thigh, back, or chest will carry this beautifully.',
+      'Full Sleeve or Back Piece': 'Plan the flow across the whole canvas first. A great sleeve or back piece is built in sessions — start with the anchor and grow outward.'
     };
 
     function getDirection(style, vibe, size) {
       let key = `${style}|${vibe}`;
       let d = DIRECTIONS[key];
-      if (!d) {
-        const fallbackKey = Object.keys(DIRECTIONS).find(k => k.startsWith(style + '|'));
-        d = fallbackKey ? DIRECTIONS[fallbackKey] : null;
-      }
-      if (!d) {
-        d = {
-          title: 'A Direction <em>All Your Own</em>',
-          body: 'Your combination is rare — which means your tattoo should be too. Bring your style, vibe, and vision to the consultation and we\'ll build something from scratch that\'s entirely yours.',
-          suggestions: ['Start with a mood board of references — images, textures, feelings', 'Think about what the tattoo should mean in 20 years, not just today', 'Trust the process — the best work comes from a real conversation']
-        };
-      }
+      if (!d) { const fb = Object.keys(DIRECTIONS).find(k => k.startsWith(style + '|')); d = fb ? DIRECTIONS[fb] : null; }
+      if (!d) d = { title: 'A Direction <em>All Your Own</em>', body: 'Your combination is rare — which means your tattoo should be too. Bring your vision to the consultation.', suggestions: ['Start with a mood board of references', 'Think about what the tattoo should mean in 20 years', 'Trust the process — the best work comes from real conversation'] };
       const sizeNote = SIZE_NOTES[size];
-      const suggestions = sizeNote ? [...d.suggestions, sizeNote] : d.suggestions;
-      return { ...d, suggestions };
+      return { ...d, suggestions: sizeNote ? [...d.suggestions, sizeNote] : d.suggestions };
     }
 
     document.querySelectorAll('.mb-chips').forEach(group => {
@@ -3490,102 +3105,46 @@
           group.querySelectorAll('.mb-chip').forEach(c => c.classList.remove('selected'));
           chip.classList.add('selected');
           mbSelections[groupName] = chip.dataset.value;
-          const allPicked = mbSelections.style && mbSelections.vibe && mbSelections.size;
-          mbGenerateBtn.disabled = !allPicked;
+          mbGenerateBtn.disabled = !(mbSelections.style && mbSelections.vibe && mbSelections.size);
         });
       });
     });
 
-    mbGenerateBtn.addEventListener('click', generateMoodBoard);
-    document.getElementById('mbRedo').addEventListener('click', () => {
-      mbResult.classList.remove('show');
-      mbContent.classList.remove('show');
-    });
-
-    function generateMoodBoard() {
+    mbGenerateBtn.addEventListener('click', () => {
       const { style, vibe, size } = mbSelections;
-      mbResult.classList.add('show');
-      mbContent.classList.remove('show');
-      mbLoading.style.display = 'flex';
-      mbGenerateBtn.disabled = true;
-
-      document.getElementById('mbSelSummary').innerHTML =
-        [style, vibe, size].map(v => `<span class="mb-sel-tag">${v}</span>`).join('');
-
+      mbResult.classList.add('show'); mbContent.classList.remove('show'); mbLoading.style.display = 'flex'; mbGenerateBtn.disabled = true;
+      document.getElementById('mbSelSummary').innerHTML = [style, vibe, size].map(v => `<span class="mb-sel-tag">${v}</span>`).join('');
       setTimeout(() => {
         const result = getDirection(style, vibe, size);
         document.getElementById('mbTitle').innerHTML = result.title;
         document.getElementById('mbBody').textContent = result.body;
-        document.getElementById('mbSuggestions').innerHTML = result.suggestions
-          .map(s => `<div class="mb-suggestion"><div class="mb-suggestion-dot"></div><span>${s}</span></div>`)
-          .join('');
-        mbLoading.style.display = 'none';
-        mbContent.classList.add('show');
-        mbGenerateBtn.disabled = false;
+        document.getElementById('mbSuggestions').innerHTML = result.suggestions.map(s => `<div class="mb-suggestion"><div class="mb-suggestion-dot"></div><span>${s}</span></div>`).join('');
+        mbLoading.style.display = 'none'; mbContent.classList.add('show'); mbGenerateBtn.disabled = false;
       }, 900);
-    }
+    });
+    document.getElementById('mbRedo').addEventListener('click', () => { mbResult.classList.remove('show'); mbContent.classList.remove('show'); });
 
     // ── Style Quiz ────────────────────────────────────────────────────────
     const SQ_QUESTIONS = [
-      {
-        text: 'You\'re drawn to a piece of art. What stops you in your tracks?',
-        options: [
-          { icon: '🌿', title: 'A botanical illustration', sub: 'Delicate, precise, every vein visible', scores: { fineline: 3, minimalist: 1 } },
-          { icon: '🖤', title: 'A bold ink print', sub: 'Heavy blacks, raw contrast, no apology', scores: { blackwork: 3, neotraditional: 1 } },
-          { icon: '🔷', title: 'A geometric pattern', sub: 'Clean angles, perfect symmetry, order', scores: { geometric: 3, ornamental: 1 } },
-          { icon: '🎨', title: 'A loose painting', sub: 'Expressive, gestural, full of feeling', scores: { illustrative: 3, abstract: 1 } },
-        ]
-      },
-      {
-        text: 'Pick the object you\'d most want sitting on your shelf.',
-        options: [
-          { icon: '🕯️', title: 'A single white candle', sub: 'Minimal. Intentional. Nothing extra.', scores: { minimalist: 3, fineline: 1 } },
-          { icon: '📿', title: 'An antique rosary', sub: 'Sacred, ornate, layered with meaning', scores: { ornamental: 3, neotraditional: 1 } },
-          { icon: '🐍', title: 'A carved obsidian serpent', sub: 'Dark, powerful, slightly unsettling', scores: { blackwork: 3, geometric: 1 } },
-          { icon: '🌸', title: 'A pressed wildflower frame', sub: 'Organic, soft, found in nature', scores: { fineline: 2, illustrative: 2 } },
-        ]
-      },
-      {
-        text: 'What does your tattoo need to do?',
-        options: [
-          { icon: '🤫', title: 'Whisper a secret', sub: 'Only visible up close, deeply personal', scores: { fineline: 3, minimalist: 2 } },
-          { icon: '⚡', title: 'Command a room', sub: 'Seen from across the street, unforgettable', scores: { blackwork: 2, neotraditional: 3 } },
-          { icon: '🧭', title: 'Tell a story', sub: 'Layered meaning, narrative, symbolic depth', scores: { illustrative: 3, ornamental: 1 } },
-          { icon: '⚖️', title: 'Hold a truth', sub: 'Grounded in something permanent and real', scores: { geometric: 2, minimalist: 2 } },
-        ]
-      },
-      {
-        text: 'The environment that feels most like home to you.',
-        options: [
-          { icon: '🌲', title: 'A dense, quiet forest', sub: 'Mossy, still, alive with texture', scores: { illustrative: 2, fineline: 2 } },
-          { icon: '🏙️', title: 'A city at 2am', sub: 'Neon, concrete, sharp edges and shadows', scores: { blackwork: 2, geometric: 2 } },
-          { icon: '🏛️', title: 'An ancient temple', sub: 'Stone, carved patterns, built to last forever', scores: { ornamental: 3, geometric: 1 } },
-          { icon: '🌊', title: 'Open ocean at dusk', sub: 'Vast, untamed, quietly overwhelming', scores: { abstract: 2, illustrative: 2 } },
-        ]
-      },
-      {
-        text: 'Finally — how do you want to feel looking at your tattoo in 20 years?',
-        options: [
-          { icon: '✨', title: 'Quietly proud', sub: 'It still feels like the truest part of me', scores: { minimalist: 3, fineline: 1 } },
-          { icon: '🔥', title: 'Still impressed', sub: 'It still has the same impact as day one', scores: { blackwork: 2, neotraditional: 2 } },
-          { icon: '💎', title: 'Like wearing art', sub: 'Museum-quality, timeless, considered', scores: { ornamental: 2, geometric: 2 } },
-          { icon: '🌀', title: 'Like it was always there', sub: 'Part of me, not decoration on me', scores: { fineline: 2, abstract: 2 } },
-        ]
-      }
+      { text: 'You\'re drawn to a piece of art. What stops you in your tracks?', options: [{ icon:'🌿', title:'A botanical illustration', sub:'Delicate, precise, every vein visible', scores:{fineline:3,minimalist:1} }, { icon:'🖤', title:'A bold ink print', sub:'Heavy blacks, raw contrast, no apology', scores:{blackwork:3,neotraditional:1} }, { icon:'🔷', title:'A geometric pattern', sub:'Clean angles, perfect symmetry, order', scores:{geometric:3,ornamental:1} }, { icon:'🎨', title:'A loose painting', sub:'Expressive, gestural, full of feeling', scores:{illustrative:3,abstract:1} }] },
+      { text: 'Pick the object you\'d most want sitting on your shelf.', options: [{ icon:'🕯️', title:'A single white candle', sub:'Minimal. Intentional. Nothing extra.', scores:{minimalist:3,fineline:1} }, { icon:'📿', title:'An antique rosary', sub:'Sacred, ornate, layered with meaning', scores:{ornamental:3,neotraditional:1} }, { icon:'🐍', title:'A carved obsidian serpent', sub:'Dark, powerful, slightly unsettling', scores:{blackwork:3,geometric:1} }, { icon:'🌸', title:'A pressed wildflower frame', sub:'Organic, soft, found in nature', scores:{fineline:2,illustrative:2} }] },
+      { text: 'What does your tattoo need to do?', options: [{ icon:'🤫', title:'Whisper a secret', sub:'Only visible up close, deeply personal', scores:{fineline:3,minimalist:2} }, { icon:'⚡', title:'Command a room', sub:'Seen from across the street, unforgettable', scores:{blackwork:2,neotraditional:3} }, { icon:'🧭', title:'Tell a story', sub:'Layered meaning, narrative, symbolic depth', scores:{illustrative:3,ornamental:1} }, { icon:'⚖️', title:'Hold a truth', sub:'Grounded in something permanent and real', scores:{geometric:2,minimalist:2} }] },
+      { text: 'The environment that feels most like home to you.', options: [{ icon:'🌲', title:'A dense, quiet forest', sub:'Mossy, still, alive with texture', scores:{illustrative:2,fineline:2} }, { icon:'🏙️', title:'A city at 2am', sub:'Neon, concrete, sharp edges and shadows', scores:{blackwork:2,geometric:2} }, { icon:'🏛️', title:'An ancient temple', sub:'Stone, carved patterns, built to last forever', scores:{ornamental:3,geometric:1} }, { icon:'🌊', title:'Open ocean at dusk', sub:'Vast, untamed, quietly overwhelming', scores:{abstract:2,illustrative:2} }] },
+      { text: 'Finally — how do you want to feel looking at your tattoo in 20 years?', options: [{ icon:'✨', title:'Quietly proud', sub:'It still feels like the truest part of me', scores:{minimalist:3,fineline:1} }, { icon:'🔥', title:'Still impressed', sub:'It still has the same impact as day one', scores:{blackwork:2,neotraditional:2} }, { icon:'💎', title:'Like wearing art', sub:'Museum-quality, timeless, considered', scores:{ornamental:2,geometric:2} }, { icon:'🌀', title:'Like it was always there', sub:'Part of me, not decoration on me', scores:{fineline:2,abstract:2} }] }
     ];
 
     const SQ_RESULTS = {
-      fineline:      { title: 'Fine Line <em>Minimalist</em>',        desc: 'You\'re precise, intentional, and quietly confident. Your tattoo doesn\'t need to announce itself — it reveals itself. Fine line work is your language: delicate marks with permanent meaning, made to be discovered rather than displayed.',          traits: ['Delicate Detail', 'Whispered Meaning', 'Timeless', 'Understated'] },
-      minimalist:    { title: 'The <em>Purist</em>',                  desc: 'Less is everything to you. One perfect mark, placed with absolute intention. You\'re not here for decoration — you\'re here for the essential. Your tattoo will be small enough to overlook and significant enough to never forget.',                    traits: ['One Mark', 'Pure Intention', 'Precision', 'Restraint'] },
-      blackwork:     { title: 'Blackwork <em>Bold</em>',              desc: 'You wear ink like armour. Heavy blacks, raw contrast, unapologetic presence — your tattoo makes a statement without needing words. This is tattooing at its most primal, and you\'re exactly the person it was made for.',                               traits: ['Bold Contrast', 'Permanent Power', 'No Compromise', 'Raw'] },
-      geometric:     { title: 'Geometric <em>Architect</em>',         desc: 'You think in systems and find beauty in structure. Geometry appeals to your need for order without coldness — every angle is intentional, every line load-bearing. Your tattoo is designed, not drawn.',                                                   traits: ['Structured', 'Mathematical', 'Clean', 'Considered'] },
-      neotraditional:{ title: 'Neo-Traditional <em>Storyteller</em>', desc: 'Rich, narrative, and vivid — you want a tattoo that carries weight and turns heads. Neo-traditional gives you bold outlines, expressive colour, and subject matter pulled from lore and mythology. You\'re building a collection, not a single piece.',     traits: ['Rich Colour', 'Bold Lines', 'Narrative', 'Iconic'] },
-      illustrative:  { title: 'Illustrative <em>Dreamer</em>',        desc: 'Your skin is a canvas for story. Illustrative work turns your ideas into fully-realised worlds — organic, painterly, and deeply personal. You want art that feels hand-made, not stamped.',                                                               traits: ['Painterly', 'Organic', 'Narrative', 'Hand-Crafted'] },
-      ornamental:    { title: 'Ornamental <em>Devotee</em>',          desc: 'Sacred, decorative, and considered — you understand that your body is a space worth adorning with intention. Ornamental work at its finest feels like jewellery you\'ll never take off: symmetrical, intricate, and built to age like gold.',              traits: ['Sacred Detail', 'Symmetry', 'Luxurious', 'Ceremonial'] },
-      abstract:      { title: 'Abstract <em>Expressionist</em>',      desc: 'You resist definition — and that\'s your greatest strength. Abstract work gives you something no one else has: a tattoo that means exactly what you decide it means, rendered in marks that can\'t be replicated. Truly, entirely yours.',                  traits: ['Unique', 'Expressive', 'Unrepeatable', 'Free'] },
+      fineline:      { title:'Fine Line <em>Minimalist</em>',         desc:'You\'re precise, intentional, and quietly confident. Fine line work is your language: delicate marks with permanent meaning.',                          traits:['Delicate Detail','Whispered Meaning','Timeless','Understated'] },
+      minimalist:    { title:'The <em>Purist</em>',                   desc:'Less is everything to you. One perfect mark, placed with absolute intention. Small enough to overlook, significant enough to never forget.',                traits:['One Mark','Pure Intention','Precision','Restraint'] },
+      blackwork:     { title:'Blackwork <em>Bold</em>',               desc:'You wear ink like armour. Heavy blacks, raw contrast, unapologetic presence — tattooing at its most primal.',                                             traits:['Bold Contrast','Permanent Power','No Compromise','Raw'] },
+      geometric:     { title:'Geometric <em>Architect</em>',          desc:'You think in systems and find beauty in structure. Your tattoo is designed, not drawn — every angle intentional.',                                          traits:['Structured','Mathematical','Clean','Considered'] },
+      neotraditional:{ title:'Neo-Traditional <em>Storyteller</em>',  desc:'Rich, narrative, and vivid — you want a tattoo that carries weight and turns heads. You\'re building a collection, not a single piece.',                  traits:['Rich Colour','Bold Lines','Narrative','Iconic'] },
+      illustrative:  { title:'Illustrative <em>Dreamer</em>',         desc:'Your skin is a canvas for story. Illustrative work turns your ideas into fully-realised worlds — organic, painterly, and deeply personal.',               traits:['Painterly','Organic','Narrative','Hand-Crafted'] },
+      ornamental:    { title:'Ornamental <em>Devotee</em>',           desc:'Sacred, decorative, and considered — ornamental work at its finest feels like jewellery you\'ll never take off: symmetrical, intricate, ageless.',         traits:['Sacred Detail','Symmetry','Luxurious','Ceremonial'] },
+      abstract:      { title:'Abstract <em>Expressionist</em>',       desc:'You resist definition — and that\'s your greatest strength. Abstract work gives you something no one else has: truly, entirely yours.',                    traits:['Unique','Expressive','Unrepeatable','Free'] },
     };
 
-    let sqScores = { fineline: 0, minimalist: 0, blackwork: 0, geometric: 0, neotraditional: 0, illustrative: 0, ornamental: 0, abstract: 0 };
+    let sqScores = { fineline:0, minimalist:0, blackwork:0, geometric:0, neotraditional:0, illustrative:0, ornamental:0, abstract:0 };
     let sqCurrent = 0;
     const sqContainer = document.getElementById('sqQuestions');
     const sqResult    = document.getElementById('sqResult');
@@ -3598,29 +3157,16 @@
         const div = document.createElement('div');
         div.className = 'sq-question' + (qi === 0 ? ' active' : '');
         div.id = `sqQ${qi}`;
-        div.innerHTML = `
-          <div class="sq-q-text">${q.text}</div>
-          <div class="sq-options">
-            ${q.options.map((o, oi) => `
-              <button class="sq-option" data-qi="${qi}" data-oi="${oi}">
-                <div class="sq-opt-icon">${o.icon}</div>
-                <div class="sq-opt-body">
-                  <div class="sq-opt-title">${o.title}</div>
-                  <div class="sq-opt-sub">${o.sub}</div>
-                </div>
-              </button>`).join('')}
-          </div>`;
+        div.innerHTML = `<div class="sq-q-text">${q.text}</div><div class="sq-options">${q.options.map((o,oi) => `<button class="sq-option" data-qi="${qi}" data-oi="${oi}"><div class="sq-opt-icon">${o.icon}</div><div class="sq-opt-body"><div class="sq-opt-title">${o.title}</div><div class="sq-opt-sub">${o.sub}</div></div></button>`).join('')}</div>`;
         sqContainer.appendChild(div);
       });
-
       document.querySelectorAll('.sq-option').forEach(btn => {
         btn.addEventListener('click', () => {
-          const qi = parseInt(btn.dataset.qi);
-          const oi = parseInt(btn.dataset.oi);
+          const qi = parseInt(btn.dataset.qi), oi = parseInt(btn.dataset.oi);
           const opt = SQ_QUESTIONS[qi].options[oi];
           document.querySelectorAll(`#sqQ${qi} .sq-option`).forEach(b => b.classList.remove('chosen'));
           btn.classList.add('chosen');
-          Object.entries(opt.scores).forEach(([k, v]) => { sqScores[k] = (sqScores[k] || 0) + v; });
+          Object.entries(opt.scores).forEach(([k,v]) => { sqScores[k] = (sqScores[k] || 0) + v; });
           setTimeout(() => sqNext(qi), 380);
         });
       });
@@ -3629,38 +3175,28 @@
     function sqNext(qi) {
       document.getElementById(`sqQ${qi}`).classList.remove('active');
       sqCurrent = qi + 1;
-      if (sqCurrent >= SQ_QUESTIONS.length) {
-        sqShowResult();
-        return;
-      }
+      if (sqCurrent >= SQ_QUESTIONS.length) { sqShowResult(); return; }
       document.getElementById(`sqQ${sqCurrent}`).classList.add('active');
-      const pct = ((sqCurrent) / SQ_QUESTIONS.length) * 100;
-      sqProgress.style.width = pct + '%';
+      sqProgress.style.width = ((sqCurrent) / SQ_QUESTIONS.length * 100) + '%';
       sqLabel.textContent = `Question ${sqCurrent + 1} of ${SQ_QUESTIONS.length}`;
     }
 
     function sqShowResult() {
-      sqProgress.style.width = '100%';
-      sqLabel.textContent = 'Complete';
-      const top = Object.entries(sqScores).sort((a, b) => b[1] - a[1])[0][0];
+      sqProgress.style.width = '100%'; sqLabel.textContent = 'Complete';
+      const top = Object.entries(sqScores).sort((a,b) => b[1]-a[1])[0][0];
       const r = SQ_RESULTS[top];
       document.getElementById('sqResultTitle').innerHTML = r.title;
       document.getElementById('sqResultDesc').textContent = r.desc;
       document.getElementById('sqResultTraits').innerHTML = r.traits.map(t => `<span class="sq-trait">${t}</span>`).join('');
-      sqContainer.style.display = 'none';
-      sqResult.style.display = 'block';
+      sqContainer.style.display = 'none'; sqResult.style.display = 'block';
       requestAnimationFrame(() => requestAnimationFrame(() => sqResult.classList.add('show')));
     }
 
     function sqReset() {
-      sqScores = { fineline: 0, minimalist: 0, blackwork: 0, geometric: 0, neotraditional: 0, illustrative: 0, ornamental: 0, abstract: 0 };
-      sqCurrent = 0;
-      sqResult.classList.remove('show');
-      sqResult.style.display = 'none';
-      sqContainer.style.display = '';
-      sqProgress.style.width = '20%';
-      sqLabel.textContent = 'Question 1 of 5';
-      sqBuild();
+      sqScores = { fineline:0, minimalist:0, blackwork:0, geometric:0, neotraditional:0, illustrative:0, ornamental:0, abstract:0 };
+      sqCurrent = 0; sqResult.classList.remove('show'); sqResult.style.display = 'none';
+      sqContainer.style.display = ''; sqProgress.style.width = '20%';
+      sqLabel.textContent = 'Question 1 of 5'; sqBuild();
     }
 
     document.getElementById('sqRetake').addEventListener('click', sqReset);
@@ -3669,60 +3205,34 @@
     // ── Portfolio Slider ──────────────────────────────────────────────────
     (function() {
       const SLIDE_DURATION = 5500;
-      const track    = document.getElementById('pfTrack');
-      const wrap     = document.getElementById('pfWrap');
-      const progress = document.getElementById('pfProgress');
-      const dotsEl   = document.getElementById('pfDots');
-      const slides   = Array.from(track.querySelectorAll('.pf-slide'));
-      const total    = slides.length;
-      let current    = 0;
-      let autoTimer  = null;
-      let paused     = false;
+      const track = document.getElementById('pfTrack'), wrap = document.getElementById('pfWrap');
+      const progress = document.getElementById('pfProgress'), dotsEl = document.getElementById('pfDots');
+      const slides = Array.from(track.querySelectorAll('.pf-slide'));
+      const total = slides.length;
+      let current = 0, autoTimer = null, paused = false;
 
-      dotsEl.innerHTML = slides.map((_, i) =>
-        `<button class="pf-dot${i===0?' active':''}" onclick="pfGoTo(${i})"></button>`
-      ).join('');
-
-      window.pfGoTo = function(i) { pfSet(i); resetAuto(); };
-      window.pfMove = function(dir) { pfSet((current + dir + total) % total); resetAuto(); };
+      dotsEl.innerHTML = slides.map((_,i) => `<button class="pf-dot${i===0?' active':''}" onclick="pfGoTo(${i})"></button>`).join('');
+      window.pfGoTo = i => { pfSet(i); resetAuto(); };
+      window.pfMove = dir => { pfSet((current + dir + total) % total); resetAuto(); };
 
       function pfSet(idx) {
         slides[current].classList.remove('active');
         current = (idx + total) % total;
         slides[current].classList.add('active');
-
         const slideW = slides[0].offsetWidth + 24;
         track.style.transform = `translateX(-${current * slideW}px)`;
-
         document.getElementById('pfPrev').disabled = current === 0;
         document.getElementById('pfNext').disabled = current === total - 1;
-
-        dotsEl.querySelectorAll('.pf-dot').forEach((d, i) => d.classList.toggle('active', i === current));
-
-        progress.style.transition = 'none';
-        progress.style.width = '0%';
-        requestAnimationFrame(() => requestAnimationFrame(() => {
-          progress.style.transition = `width ${SLIDE_DURATION}ms linear`;
-          progress.style.width = '100%';
-        }));
+        dotsEl.querySelectorAll('.pf-dot').forEach((d,i) => d.classList.toggle('active', i === current));
+        progress.style.transition = 'none'; progress.style.width = '0%';
+        requestAnimationFrame(() => requestAnimationFrame(() => { progress.style.transition = `width ${SLIDE_DURATION}ms linear`; progress.style.width = '100%'; }));
       }
 
-      function resetAuto() {
-        clearTimeout(autoTimer);
-        if (!paused) startAuto();
-      }
-
+      function resetAuto() { clearTimeout(autoTimer); if (!paused) startAuto(); }
       function startAuto() {
-        progress.style.transition = 'none';
-        progress.style.width = '0%';
-        requestAnimationFrame(() => requestAnimationFrame(() => {
-          progress.style.transition = `width ${SLIDE_DURATION}ms linear`;
-          progress.style.width = '100%';
-        }));
-        autoTimer = setTimeout(() => {
-          pfSet((current + 1) % total);
-          startAuto();
-        }, SLIDE_DURATION);
+        progress.style.transition = 'none'; progress.style.width = '0%';
+        requestAnimationFrame(() => requestAnimationFrame(() => { progress.style.transition = `width ${SLIDE_DURATION}ms linear`; progress.style.width = '100%'; }));
+        autoTimer = setTimeout(() => { pfSet((current + 1) % total); startAuto(); }, SLIDE_DURATION);
       }
 
       wrap.addEventListener('mouseenter', () => { paused = true; clearTimeout(autoTimer); progress.style.transition = 'none'; });
@@ -3730,49 +3240,32 @@
 
       let touchStartX = 0;
       wrap.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
-      wrap.addEventListener('touchend',   e => {
-        const dx = e.changedTouches[0].clientX - touchStartX;
-        if (Math.abs(dx) > 40) { pfMove(dx < 0 ? 1 : -1); }
-      }, { passive: true });
+      wrap.addEventListener('touchend', e => { const dx = e.changedTouches[0].clientX - touchStartX; if (Math.abs(dx) > 40) pfMove(dx < 0 ? 1 : -1); }, { passive: true });
+      document.addEventListener('keydown', e => { if (e.key === 'ArrowLeft') pfMove(-1); if (e.key === 'ArrowRight') pfMove(1); });
 
-      document.addEventListener('keydown', e => {
-        if (e.key === 'ArrowLeft')  pfMove(-1);
-        if (e.key === 'ArrowRight') pfMove(1);
-      });
-
-      pfSet(0);
-      startAuto();
+      pfSet(0); startAuto();
     })();
 
     // ── Mobile bottom bar ─────────────────────────────────────────────────
     function toggleMobMore() {
-      const drawer = document.getElementById('mobMoreDrawer');
-      const btn    = document.getElementById('mobMoreBtn');
+      const drawer = document.getElementById('mobMoreDrawer'), btn = document.getElementById('mobMoreBtn');
       const isOpen = drawer.classList.contains('open');
-      drawer.classList.toggle('open', !isOpen);
-      btn.classList.toggle('nav-active', !isOpen);
+      drawer.classList.toggle('open', !isOpen); btn.classList.toggle('nav-active', !isOpen);
     }
     function closeMobMore() {
       document.getElementById('mobMoreDrawer').classList.remove('open');
       document.getElementById('mobMoreBtn').classList.remove('nav-active');
     }
-    document.addEventListener('click', e => {
-      if (!e.target.closest('#mobMoreBtn') && !e.target.closest('#mobMoreDrawer')) closeMobMore();
-    });
+    document.addEventListener('click', e => { if (!e.target.closest('#mobMoreBtn') && !e.target.closest('#mobMoreDrawer')) closeMobMore(); });
 
-    // ── Active section highlighting ────────────────────────────────────────
+    // ── Active section highlighting ───────────────────────────────────────
     const navSections = ['portfolio','visualiser','moodboard','stylequiz','booking','aftercare','coverup','about','testimonials','location'];
     const navObserver = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           const id = entry.target.id;
-          document.querySelectorAll('.nav-links a, .mob-tab[data-section], .mob-more-link').forEach(a => {
-            const href = a.getAttribute('href') || '';
-            a.classList.toggle('nav-active', href === '#' + id);
-          });
-          document.querySelectorAll('.mob-tab[data-section]').forEach(t => {
-            t.classList.toggle('nav-active', t.dataset.section === id);
-          });
+          document.querySelectorAll('.nav-links a, .mob-tab[data-section], .mob-more-link').forEach(a => { a.classList.toggle('nav-active', (a.getAttribute('href') || '') === '#' + id); });
+          document.querySelectorAll('.mob-tab[data-section]').forEach(t => t.classList.toggle('nav-active', t.dataset.section === id));
         }
       });
     }, { threshold: 0.25 });
@@ -3784,68 +3277,75 @@
     let testiIdx = 0;
 
     function testiMove(dir) {
-      const vis  = TESTI_VISIBLE();
-      const maxIdx = TESTI_TOTAL - vis;
+      const vis = TESTI_VISIBLE(), maxIdx = TESTI_TOTAL - vis;
       testiIdx = Math.max(0, Math.min(testiIdx + dir, maxIdx));
       const track = document.getElementById('testiTrack');
       const cardW = track.children[0].getBoundingClientRect().width + 24;
       track.style.transform = `translateX(-${testiIdx * cardW}px)`;
       document.getElementById('testiBtnPrev').disabled = testiIdx === 0;
       document.getElementById('testiBtnNext').disabled = testiIdx >= maxIdx;
-      document.querySelectorAll('.testi-dot').forEach((d, i) => d.classList.toggle('active', i === testiIdx));
+      document.querySelectorAll('.testi-dot').forEach((d,i) => d.classList.toggle('active', i === testiIdx));
     }
 
     function testiInitDots() {
-      const vis = TESTI_VISIBLE();
-      const count = TESTI_TOTAL - vis + 1;
-      const dotsEl = document.getElementById('testiDots');
-      dotsEl.innerHTML = Array.from({length: count}, (_, i) =>
-        `<button class="testi-dot${i===0?' active':''}" onclick="testiGoTo(${i})"></button>`
-      ).join('');
+      const vis = TESTI_VISIBLE(), count = TESTI_TOTAL - vis + 1;
+      document.getElementById('testiDots').innerHTML = Array.from({length: count}, (_,i) => `<button class="testi-dot${i===0?' active':''}" onclick="testiGoTo(${i})"></button>`).join('');
     }
     function testiGoTo(i) { testiMove(i - testiIdx); }
-
     testiInitDots();
     window.addEventListener('resize', () => { testiIdx = 0; testiInitDots(); testiMove(0); });
 
     // ── Scroll reveal ─────────────────────────────────────────────────────
     const reveals = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-    }, { threshold: 0.1 });
+    const observer = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.1 });
     reveals.forEach(el => observer.observe(el));
 
-    // ── Cover-up Before/After Sliders ────────────────────────────────────
+    // ── Cover-up Before/After Sliders — OPTIMISED FOR MOBILE ─────────────
+    // Key fixes:
+    //   1. touch-action: none on .cu-slider-wrap (CSS) — stops browser scroll lag
+    //   2. Unified pointer events + setPointerCapture — no window listeners, no event loss
+    //   3. requestAnimationFrame throttle — one DOM write per frame max
+    //   4. handle uses transform (GPU) instead of left (layout recalc)
+    //   5. will-change: transform on handle, will-change: width on after-wrap
     document.querySelectorAll('.cu-slider-wrap').forEach(wrap => {
       const afterWrap = wrap.querySelector('.cu-after-wrap');
       const handle    = wrap.querySelector('.cu-handle');
       const afterImg  = wrap.querySelector('.cu-after-wrap img');
-      let dragging = false;
+      let rafId = null;
+      let pendingX = null;
 
       function setPos(clientX) {
-        const rect = wrap.getBoundingClientRect();
-        let pct = (clientX - rect.left) / rect.width;
-        pct = Math.max(0.02, Math.min(0.98, pct));
-        const pctStr = (pct * 100).toFixed(2) + '%';
-        afterWrap.style.width = pctStr;
-        handle.style.left = pctStr;
-        if (afterImg) {
-          afterImg.style.minWidth = rect.width + 'px';
-        }
+        // Throttle to one DOM write per animation frame
+        pendingX = clientX;
+        if (rafId) return;
+        rafId = requestAnimationFrame(() => {
+          rafId = null;
+          const rect = wrap.getBoundingClientRect();
+          let pct = (pendingX - rect.left) / rect.width;
+          pct = Math.max(0.02, Math.min(0.98, pct));
+          // GPU-composited transform for handle — no layout recalc
+          afterWrap.style.width = (pct * 100).toFixed(3) + '%';
+          handle.style.transform = 'translateX(' + (pct * rect.width).toFixed(1) + 'px) translateX(-50%)';
+          if (afterImg) afterImg.style.minWidth = rect.width + 'px';
+        });
       }
 
-      // Mouse
-      wrap.addEventListener('mousedown', e => { dragging = true; setPos(e.clientX); e.preventDefault(); });
-      window.addEventListener('mousemove', e => { if (dragging) setPos(e.clientX); });
-      window.addEventListener('mouseup',   () => { dragging = false; });
+      // Pointer events + setPointerCapture replaces touchstart/touchmove/window listeners
+      // The captured pointer follows the element so no global listeners are needed
+      wrap.addEventListener('pointerdown', e => {
+        wrap.setPointerCapture(e.pointerId);
+        setPos(e.clientX);
+        e.preventDefault();
+      });
+      wrap.addEventListener('pointermove', e => {
+        if (!wrap.hasPointerCapture(e.pointerId)) return;
+        setPos(e.clientX);
+      });
+      wrap.addEventListener('pointerup',     e => { wrap.releasePointerCapture(e.pointerId); });
+      wrap.addEventListener('pointercancel', e => { wrap.releasePointerCapture(e.pointerId); });
 
-      // Touch
-      wrap.addEventListener('touchstart', e => { dragging = true; setPos(e.touches[0].clientX); }, { passive: true });
-      window.addEventListener('touchmove', e => { if (dragging) setPos(e.touches[0].clientX); }, { passive: true });
-      window.addEventListener('touchend',  () => { dragging = false; });
-
-      // Init at 50%
-      wrap.addEventListener('mouseenter', () => {
+      // Init: ensure after-img fills container width on first paint
+      requestAnimationFrame(() => {
         const rect = wrap.getBoundingClientRect();
         if (afterImg) afterImg.style.minWidth = rect.width + 'px';
       });
